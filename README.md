@@ -22,7 +22,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT][license-shield]][license-url]
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -297,7 +296,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="http://virgilribeyre.com">virgilribeyre.com</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://linktr.ee/zhaith_izaliel">Virgil Ribeyre</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -325,10 +324,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-shield]: https://img.shields.io/gitlab/issues/open/bootstrapers%2Fvue-typescript-bootstraper?style=for-the-badge
 
 [issues-url]: https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/issues
-
-[license-shield]: https://img.shields.io/gitlab/license/bootstrapers%2Fvue-typescript-bootstraper?style=for-the-badge&logo=gitlab
-
-[license-url]: https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/blob/master/LICENSE?ref_type=heads
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/virgil-ribeyre-810135196/
