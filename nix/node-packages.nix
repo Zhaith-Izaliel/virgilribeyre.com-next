@@ -58,13 +58,13 @@ let
         sha512 = "OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==";
       };
     };
-    "@types/luxon-3.4.1" = {
+    "@types/luxon-3.4.2" = {
       name = "_at_types_slash_luxon";
       packageName = "@types/luxon";
-      version = "3.4.1";
+      version = "3.4.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/luxon/-/luxon-3.4.1.tgz";
-        sha512 = "m1KQEZZCITtheRhMVq5jDvAl0HwFhunLs7x6tpFFvUTJpKfmewS/Ymg+YA97/s8w1I1nC4pJyi0aAnn+vf3yew==";
+        url = "https://registry.npmjs.org/@types/luxon/-/luxon-3.4.2.tgz";
+        sha512 = "TifLZlFudklWlMBfhubvgqTXRzLDI5pCbGa4P8a3wPyUQSW+1xQ5eDsreP9DWHX3tjq1ke96uYG/nwundroWcA==";
       };
     };
     "@types/node-20.11.5" = {
@@ -303,8 +303,8 @@ let
     };
   };
   args = {
-    name = "vue-typescript-bootstraper";
-    packageName = "vue-typescript-bootstraper";
+    name = "virgilribeyre.com-next";
+    packageName = "virgilribeyre.com-next";
     version = "1.0.0";
     src = ./..;
     dependencies = [
@@ -314,7 +314,7 @@ let
       sources."@intlify/shared-9.9.0"
       sources."@jridgewell/sourcemap-codec-1.4.15"
       sources."@types/lodash-4.14.202"
-      sources."@types/luxon-3.4.1"
+      sources."@types/luxon-3.4.2"
       sources."@types/node-20.11.5"
       sources."@vue/compiler-core-3.4.15"
       sources."@vue/compiler-dom-3.4.15"
@@ -344,7 +344,7 @@ let
     ];
     buildInputs = globalBuildInputs;
     meta = {
-      description = "An opinionated bootstraper to create a Vue.js application, with first class Typescript support, powered by Vite.js";
+      description = "My personal website, powered by Vue.js and typescript.";
       license = "MIT";
     };
     production = true;

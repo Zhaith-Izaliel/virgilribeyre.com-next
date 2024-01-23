@@ -1,11 +1,11 @@
 {
-  "name": "vue-typescript-bootstraper",
+  "name": "virgilribeyre.com-next",
   "author": "Virgil Ribeyre",
   "license": "MIT",
-  "description": "An opinionated bootstraper to create a Vue.js application, with first class Typescript support, powered by Vite.js",
+  "description": "My personal website, powered by Vue.js and typescript.",
   "keywords": [
-    "bootstraper",
-    "template",
+    "website",
+    "virgilribeyre.com",
     "typescript",
     "eslint",
     "vuejs",
