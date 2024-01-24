@@ -2,7 +2,7 @@
   "name": "virgilribeyre.com-next",
   "author": "Virgil Ribeyre",
   "license": "MIT",
-  "description": "My personal website, powered by Vue.js and typescript.",
+  "description": "My personal website, powered by Vue.js and Typescript.",
   "keywords": [
     "website",
     "virgilribeyre.com",
@@ -21,7 +21,7 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "lint": "npx prettier -w . && npx eslint --fix '{src/**/*.ts,tests/**/*.ts}'",
+    "lint": "npx eslint --fix '{src/**/*.ts,tests/**/*.ts}'",
     "lint:markup": "vue-tsc --noEmit",
     "docs": "npx typedoc --out docs --theme minimal src",
     "storybook": "storybook dev -p 6006",
@@ -33,9 +33,12 @@
     "@types/node": "^20.11.5",
     "lodash": "^4.17.21",
     "luxon": "^3.4.4",
+    "normalize.css": "^8.0.1",
     "vue": "^3.3.11",
     "vue-i18n": "^9.9.0",
-    "vue-router": "^4.2.5"
+    "vue-markdown-render": "^2.1.1",
+    "vue-router": "^4.2.5",
+    "vue3-click-away": "^1.2.4"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.9",
@@ -48,6 +51,7 @@
     "@stylistic/eslint-plugin-js": "^1.5.4",
     "@types/chai": "^4.3.11",
     "@types/jest": "^29.5.11",
+    "@types/markdown-it": "^13.0.7",
     "@types/sinon": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.19.0",

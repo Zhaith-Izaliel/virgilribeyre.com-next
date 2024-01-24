@@ -1,3 +1,5 @@
+const path = require("node:path");
+
 module.exports = {
   root: true,
   env: {
@@ -12,12 +14,12 @@ module.exports = {
     "airbnb-base",
     "airbnb-typescript/base",
     "plugin:import/typescript",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
-    project: "./tsconfig.json",
+    project: path.join(__dirname, "tsconfig.json"),
   },
   settings: {
     "import/resolver": {
