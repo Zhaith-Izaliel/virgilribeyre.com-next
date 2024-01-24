@@ -9,7 +9,7 @@ export default defineComponent({
   data() {
     return {
       state: {
-        left: [
+        items: [
           {
             label: 'test',
             route: '/#test',
@@ -19,24 +19,26 @@ export default defineComponent({
             route: '/#test',
           },
         ],
-        center: [
+        socials: [
           {
-            label: 'test',
-            route: '/#test',
+            name: 'mail',
+            url: 'https://aemail.com/82LL',
           },
           {
-            label: 'test2',
-            route: '/#test',
-          },
-        ],
-        right: [
-          {
-            label: 'test',
-            route: '/#test',
+            name: 'malt',
+            url: 'https://www.malt.fr/profile/virgilribeyre',
           },
           {
-            label: 'test2',
-            route: '/#test',
+            name: 'linkedin',
+            url: 'https://www.linkedin.com/in/virgil-ribeyre-810135196',
+          },
+          {
+            name: 'gitlab',
+            url: 'https://gitlab.com/Zhaith-Izaliel',
+          },
+          {
+            name: 'github',
+            url: 'https://github.com/Zhaith-Izaliel',
           },
         ],
       },

@@ -44,7 +44,6 @@ module.exports = {
     "require-atomic-updates": "error",
     "default-case": "error",
     curly: "error",
-    "max-depth": ["error", 3],
     "dot-notation": "error",
     "no-console":
       process.env.NODE_ENV === "production"
@@ -68,9 +67,10 @@ module.exports = {
       },
     ],
     eqeqeq: "error",
-    indent: ["error", 2],
+    indent: ["error", 2, { "SwitchCase": 1 }],
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "single"],
     semi: ["error", "always"],
   },
 };
+

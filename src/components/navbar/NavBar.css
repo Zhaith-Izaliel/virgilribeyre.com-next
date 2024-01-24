@@ -1,17 +1,16 @@
 .vr__navbar-main {
   @apply flex justify-between items-center space-x-2 px-4 bg-slate-200;
 
-  .vr__navbar-left,
-  .vr__navbar-right,
-  .vr__navbar-center {
-    @apply flex justify-center items-center space-x-4;
+  .vr__navbar-items, .vr__navbar-socials {
+    @apply flex justify-center space-x-4;
 
     .vr__navbar-item {
       @apply p-4 transition-all border-solid border-transparent border-b-2 ease-in-out duration-500;
 
       &:hover {
-        @apply border-b-green-500 text-green-500;
+        @apply border-b-green-500 text-green-500 cursor-pointer;
       }
     }
   }
 }
+

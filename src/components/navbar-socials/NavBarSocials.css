@@ -1,0 +1,12 @@
+.vr__navbar-socials {
+    @apply flex justify-center space-x-4;
+
+    .vr__navbar-social {
+      @apply transition-all border-solid border-transparent border-b-2 ease-in-out duration-500;
+
+      &:hover {
+        @apply border-b-green-500 text-green-500 cursor-pointer;
+      }
+    }
+  }
+

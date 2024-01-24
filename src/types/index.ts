@@ -3,7 +3,7 @@ import { RouteLocationRaw } from 'vue-router';
 /**
  * Defines a Navbar item
  */
-export type INavBarItem = {
+export type NavBarItem = {
   /**
    * The label of the item
    */
@@ -18,4 +18,19 @@ export type INavBarItem = {
    * The link to which the item refers to
    */
   route: RouteLocationRaw;
+};
+
+/**
+ * Defines a Navbar social link
+ */
+export type NavBarSocial = {
+  /**
+   * Name of the social link
+   */
+  name: 'gitlab' | 'github' | 'mail' | 'linkedin' | 'malt';
+
+  /**
+   * URL of the social link
+   */
+  url: string;
 };

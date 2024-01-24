@@ -1,10 +1,15 @@
 import { defineComponent, PropType } from 'vue';
-import type { INavBarItem } from '@/types';
+import type { NavBarItem, NavBarSocial } from '@/types';
+import NavBarSocials from '@/components/navbar-socials/NavBarSocials.vue';
+import { Menu } from '@iconoir/vue';
 
 export default defineComponent({
+  components: {
+    Menu, /* eslint-disable-line */
+    NavBarSocials,
+  },
   props: {
-    itemsLeft: { type: Array as PropType<INavBarItem[]>, default: () => [] },
-    itemsRight: { type: Array as PropType<INavBarItem[]>, default: () => [] },
-    itemsCenter: { type: Array as PropType<INavBarItem[]>, default: () => [] },
+    items: { type: Array as PropType<NavBarItem[]>, default: () => [] },
+    socials: { type: Array as PropType<NavBarSocial[]>, default: () => [] },
   },
 });
