@@ -26,7 +26,9 @@
       {
         hidden: state.menuState === 'initial',
         animate__slideInDown: state.menuState === 'open',
-        animate__slideOutUp: state.menuState === 'closed', }, ]"
+        animate__slideOutUp: state.menuState === 'closed',
+      },
+    ]"
   >
     <section class="mobile-nav-container">
       <div class="mobile-nav-menu-close">

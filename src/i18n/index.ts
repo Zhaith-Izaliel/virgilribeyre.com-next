@@ -6,9 +6,8 @@ export default createI18n({
   messages: {
     // set locale messages
     en: {
-      message: {
-        hello: 'Hello World',
-      },
+      hello: 'Hello World',
+      test: 'Eliott Girardi',
     },
   },
 });

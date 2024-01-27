@@ -3,6 +3,7 @@
 
   @screen md {
     @apply pl-2 border-l-2 border-solid;
+
     border-color: black;
   }
 
