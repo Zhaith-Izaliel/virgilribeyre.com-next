@@ -11,6 +11,7 @@
 -->
 
 <!-- PROJECT SHIELDS -->
+
 <!--
 *** I'm using markdown "reference style" links for readability.
 *** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
@@ -27,11 +28,12 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
+
 <br />
 <div align="center">
 <h1 align="center">🚀Vue + Typescript Bootstraper</h1>
 
-  <p align="center">
+<p align="center">
     An opinionated bootstraper to create a Vue.js application, with first class
     Typescript support, powered by Vite.js
     <br />
@@ -47,6 +49,7 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
+
 <details>
   <summary>Table of Contents</summary>
 
@@ -87,11 +90,11 @@ cycles on Nix powered configurations.
 
 ### Built With
 
-- [![Vue.js][Vue]][Vue-url]
-- [![Vite.js][Vite]][Vite-url]
-- [![Typescript][Typescript]][Typescript-url]
-- [![TailwindCSS][TailwindCSS]][TailwindCSS-url]
-- [![Nix][Nix]][Nix-url]
+- [![Vue.js][vue]][vue-url]
+- [![Vite.js][vite]][vite-url]
+- [![Typescript]][typescript-url]
+- [![TailwindCSS]][tailwindcss-url]
+- [![Nix]][nix-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -277,11 +280,11 @@ make build
 
 ## Roadmap
 
-- [ ] Modify Storybook configuration
-- [ ] Add storybook documentation
-- [ ] Add proper testing support
-- [ ] Switch to personal ESLint configuration
-- [ ] Add link to personal styleguide
+- \[ \] Modify Storybook configuration
+- \[ \] Add storybook documentation
+- \[ \] Add proper testing support
+- \[ \] Switch to personal ESLint configuration
+- \[ \] Add link to personal styleguide
 
 See the [open issues](https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/issues) for a full list of proposed features (and known issues).
 
@@ -299,11 +302,11 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project **on GitLab**
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'feat: Add some AmazingFeature'`), your
+1. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+1. Commit your Changes (`git commit -m 'feat: Add some AmazingFeature'`), your
    commit message should follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specifications
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Push to the Branch (`git push origin feature/AmazingFeature`)
+1. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -324,26 +327,27 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
+
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/gitlab/contributors/bootstrapers/vue-typescript-bootstraper.svg?style=for-the-badge&logo=gitlab
 [contributors-url]: https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/graphs/master?ref_type=heads
 [forks-shield]: https://img.shields.io/gitlab/forks/bootstrapers/vue-typescript-bootstraper.svg?style=for-the-badge&logo=gitlab
 [forks-url]: https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/forks
-[stars-shield]: https://img.shields.io/gitlab/stars/bootstrapers/vue-typescript-bootstraper.svg?style=for-the-badge&logo=gitlab
-[stars-url]: https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/starrers
 [issues-shield]: https://img.shields.io/gitlab/issues/open/bootstrapers%2Fvue-typescript-bootstraper?style=for-the-badge
 [issues-url]: https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/virgil-ribeyre-810135196/
+[nix]: https://img.shields.io/badge/nix-0B1120?style=for-the-badge&logo=nixos
+[nix-url]: https://nixos.org/
 [product-screenshot]: images/screenshot.png
-[Nix]: https://img.shields.io/badge/nix-0B1120?style=for-the-badge&logo=nixos
-[Nix-url]: https://nixos.org/
-[Vue]: https://img.shields.io/badge/Vue-0B1120?style=for-the-badge&logo=vuedotjs
-[Vue-url]: https://vuejs.org/
-[Vite]: https://img.shields.io/badge/Vite-0B1120?style=for-the-badge&logo=vite
-[Vite-url]: https://vitejs.dev/
-[TailwindCSS]: https://img.shields.io/badge/TailwindCSS-0B1120?style=for-the-badge&logo=tailwindcss
-[TailwindCSS-url]: https://tailwindcss.com/
-[Typescript]: https://img.shields.io/badge/Typescript-0B1120?style=for-the-badge&logo=typescript
-[Typescript-url]: https://www.typescriptlang.org/
+[stars-shield]: https://img.shields.io/gitlab/stars/bootstrapers/vue-typescript-bootstraper.svg?style=for-the-badge&logo=gitlab
+[stars-url]: https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/starrers
+[tailwindcss]: https://img.shields.io/badge/TailwindCSS-0B1120?style=for-the-badge&logo=tailwindcss
+[tailwindcss-url]: https://tailwindcss.com/
+[typescript]: https://img.shields.io/badge/Typescript-0B1120?style=for-the-badge&logo=typescript
+[typescript-url]: https://www.typescriptlang.org/
+[vite]: https://img.shields.io/badge/Vite-0B1120?style=for-the-badge&logo=vite
+[vite-url]: https://vitejs.dev/
+[vue]: https://img.shields.io/badge/Vue-0B1120?style=for-the-badge&logo=vuedotjs
+[vue-url]: https://vuejs.org/
