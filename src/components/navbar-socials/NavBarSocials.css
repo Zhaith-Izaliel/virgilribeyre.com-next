@@ -1,12 +1,17 @@
-.vr__navbar-socials {
-    @apply flex justify-center space-x-4;
+.nav-socials-container {
+  @apply flex justify-center space-x-2;
 
-    .vr__navbar-social {
-      @apply transition-all border-solid border-transparent border-b-2 ease-in-out duration-500;
+  @screen md {
+    @apply pl-2 border-l-2 border-solid;
+    border-color: black;
+  }
 
-      &:hover {
-        @apply border-b-green-500 text-green-500 cursor-pointer;
-      }
+  .nav-social {
+    @apply transition-all border-solid border-transparent border-b-2 ease-in-out duration-500;
+
+    &:hover {
+      @apply border-b-green-500 text-green-500 cursor-pointer;
     }
   }
+}
 

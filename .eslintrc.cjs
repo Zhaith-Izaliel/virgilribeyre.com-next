@@ -16,9 +16,11 @@ module.exports = {
     "plugin:import/typescript",
     "plugin:storybook/recommended",
   ],
-  parser: "@typescript-eslint/parser",
+  parser: "vue-eslint-parser",
   parserOptions: {
     ecmaVersion: "latest",
+    parser: "@typescript-eslint/parser",
+    extraFileExtensions: ["vue"],
     project: path.join(__dirname, "tsconfig.json"),
   },
   settings: {
@@ -67,10 +69,18 @@ module.exports = {
       },
     ],
     eqeqeq: "error",
-    indent: ["error", 2, { "SwitchCase": 1 }],
+    indent: ["error", 2, { SwitchCase: 1 }],
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "single"],
     semi: ["error", "always"],
+    "vue/multi-word-component-names": "off",
   },
+  overrides: [
+    {
+      files: ["src/**/*.vue"],
+      rules: {
+        "max-len": "off",
+      },
+    },
+  ],
 };
-

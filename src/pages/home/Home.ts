@@ -5,7 +5,6 @@ export default defineComponent({
   components: {
     NavBar,
   },
-  setup() {},
   data() {
     return {
       state: {

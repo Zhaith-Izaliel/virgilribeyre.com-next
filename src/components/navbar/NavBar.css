@@ -1,15 +1,44 @@
-.vr__navbar-main {
-  @apply flex justify-between items-center space-x-2 px-4 bg-slate-200;
+.nav-container {
+  @apply flex p-4 justify-between items-center space-x-2 px-4 bg-slate-200;
 
-  .vr__navbar-items, .vr__navbar-socials {
-    @apply flex justify-center space-x-4;
+  .nav-menu-btn {
+    @apply visible transition-all duration-500 ease-in-out;
 
-    .vr__navbar-item {
-      @apply p-4 transition-all border-solid border-transparent border-b-2 ease-in-out duration-500;
+    &:hover {
+      @apply cursor-pointer;
+    }
 
-      &:hover {
-        @apply border-b-green-500 text-green-500 cursor-pointer;
-      }
+    @screen md {
+      @apply invisible;
+    }
+  }
+
+  .nav-items-container {
+    @apply hidden justify-center space-x-4;
+
+    @screen md {
+      @apply flex;
+    }
+  }
+}
+
+.nav-item {
+  @apply transition-all border-solid border-transparent border-b-2 ease-in-out duration-500;
+
+  &:hover {
+    @apply border-b-green-500 text-green-500 cursor-pointer;
+  }
+}
+
+.mobile-nav-menu {
+  @apply absolute top-0 bg-slate-700 text-white p-4 min-h-screen w-screen;
+
+  .mobile-nav-container {
+    @apply flex flex-col justify-center items-center;
+
+    .mobile-nav-items-container {
+      @apply flex flex-col justify-center items-center space-y-4 w-2/3;
+      @apply pb-4 m-4 border-solid border-b-2 border-white;
     }
   }
 }

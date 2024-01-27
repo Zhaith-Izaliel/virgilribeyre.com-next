@@ -7,13 +7,17 @@ const meta = {
   title: 'Example/Button',
   component: Button,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/writing-docs/autodocs
-  tags: ["autodocs"],
+  tags: [
+    'autodocs',
+  ],
   argTypes: {
     size: {
       control: 'select',
-      options: ["small",
+      options: [
+        'small',
         'medium',
-        'large' ],
+        'large',
+      ],
     },
     backgroundColor: { control: 'color' },
     onClick: { action: 'clicked' },
@@ -24,7 +28,8 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 /*
- *👇 Render functions are a framework specific feature to allow you control on how the component renders.
+ *👇 Render functions are a framework specific feature to allow you control on
+ * how the component renders.
  * See https://storybook.js.org/docs/api/csf
  * to learn how to use render functions.
  */
