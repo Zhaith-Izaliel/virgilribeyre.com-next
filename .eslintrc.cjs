@@ -15,6 +15,7 @@ module.exports = {
     "airbnb-typescript/base",
     "plugin:import/typescript",
     "plugin:storybook/recommended",
+    "prettier",
   ],
   parser: "vue-eslint-parser",
   parserOptions: {

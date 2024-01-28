@@ -1,37 +1,42 @@
-.nav-container {
-  @apply flex p-4 justify-between items-center space-x-2 px-4 bg-slate-200;
+.nav-wrapper {
+  @apply fixed z-40 top-0;
 
-  .nav-menu-btn {
-    @apply visible transition-all duration-500 ease-in-out;
+  .nav-container {
+    @apply flex p-4 justify-between items-center space-x-2 px-4 bg-slate-200;
 
-    &:hover {
-      @apply cursor-pointer;
+    .nav-menu-btn {
+      @apply visible transition-all duration-500 ease-in-out;
+
+      &:hover {
+        @apply cursor-pointer;
+      }
+
+      @screen md {
+        @apply invisible;
+      }
     }
 
-    @screen md {
-      @apply invisible;
-    }
-  }
+    .nav-items-container {
+      @apply hidden justify-center space-x-4;
 
-  .nav-items-container {
-    @apply hidden justify-center space-x-4;
+      @screen md {
+        @apply flex;
+      }
 
-    @screen md {
-      @apply flex;
+      .nav-item {
+        @apply transition-all border-solid border-transparent border-b-2 ease-in-out duration-500;
+      
+        &:hover {
+          @apply border-b-green-500 text-green-500 cursor-pointer;
+        }
+      }
     }
   }
 }
 
-.nav-item {
-  @apply transition-all border-solid border-transparent border-b-2 ease-in-out duration-500;
-
-  &:hover {
-    @apply border-b-green-500 text-green-500 cursor-pointer;
-  }
-}
 
 .mobile-nav-menu {
-  @apply absolute top-0 bg-slate-700 text-white p-4 min-h-screen w-screen;
+  @apply absolute z-50 top-0 bg-slate-700 text-white p-4 min-h-screen w-screen;
 
   .mobile-nav-container {
     @apply flex flex-col justify-center items-center;
@@ -42,4 +47,3 @@
     }
   }
 }
-

@@ -1,25 +1,24 @@
 <template>
-  <nav class="nav-container">
-    <section class="nav-menu-btn">
-      <IconoirProvider>
-        <Menu @click="toggleMenu" />
-      </IconoirProvider>
-    </section>
-    <section
-      v-if="items.length > 0"
-      class="nav-items-container"
-    >
-      <router-link
-        v-for="(item, i) in items"
-        :key="i"
-        class="nav-item"
-        :to="item.route"
-      >
-        {{ $t(item.label) }}
-      </router-link>
-    </section>
-    <NavBarSocials :socials="socials" />
-  </nav>
+  <div class="nav-wrapper">
+    <nav class="nav-container">
+      <section class="nav-menu-btn">
+        <IconoirProvider>
+          <Menu @click="toggleMenu" />
+        </IconoirProvider>
+      </section>
+      <section v-if="items.length > 0" class="nav-items-container">
+        <router-link
+          v-for="(item, i) in items"
+          :key="i"
+          class="nav-item"
+          :to="item.route"
+        >
+          {{ $t(item.label) }}
+        </router-link>
+      </section>
+      <NavBarSocials :socials="socials" />
+    </nav>
+  </div>
   <div
     :class="[
       'mobile-nav-menu animate__animated animate__faster',
@@ -51,10 +50,7 @@
           {{ $t(item.label) }}
         </router-link>
       </nav>
-      <NavBarSocials
-        :socials="socials"
-        :is-bar="false"
-      />
+      <NavBarSocials :socials="socials" :is-bar="false" />
     </section>
   </div>
 </template>
