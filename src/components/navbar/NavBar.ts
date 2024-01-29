@@ -2,6 +2,7 @@ import { defineComponent, PropType, ref } from 'vue';
 import type { NavBarItem, NavBarSocial } from '@/types';
 import NavBarSocials from '@/components/navbar-socials/NavBarSocials.vue';
 import { Menu, Xmark, IconoirProvider } from '@iconoir/vue';
+import { useI18n } from 'vue-i18n';
 
 export default defineComponent({
   components: {
@@ -15,6 +16,7 @@ export default defineComponent({
     socials: { type: Array as PropType<NavBarSocial[]>, default: () => [] },
   },
   setup() {
+    const { t } = useI18n();
     const state = ref({
       menuState: 'initial',
     });
@@ -34,6 +36,7 @@ export default defineComponent({
     return {
       state,
       toggleMenu,
+      t,
     };
   },
 });

@@ -34,3 +34,24 @@ export type NavBarSocial = {
    */
   url: string;
 };
+
+/**
+ * Defines a Terminal Text used for the TeminalText component
+ */
+export type TerminalText = {
+
+  /**
+   * The label of the text
+   */
+  label: string;
+
+  /**
+   * The class applied to the text
+   */
+  class: string;
+
+  /**
+   * The time it takes for every letter to be typed and deleted
+   */
+  time: number;
+}
