@@ -1,43 +1,54 @@
 import { defineComponent } from 'vue';
 import NavBar from '@/components/navbar/NavBar.vue';
+import Landing from '@/pages/landing/Landing.vue';
+import Config from '@/config';
 
 export default defineComponent({
   components: {
     NavBar,
+    Landing,
   },
   data() {
     return {
       state: {
         items: [
           {
-            label: 'test',
-            route: '/#test',
+            label: 'l_startpage',
+            route: '/#top',
           },
           {
-            label: 'test2',
-            route: '/#test',
+            label: 'l_about_me',
+            route: '/#about-me',
+          },
+          {
+            label: 'l_portfolio',
+            route: '/#portfolio',
+          },
+          {
+            label: 'l_timeline',
+            route: '/#timeline',
           },
         ],
         socials: [
           {
             name: 'mail',
-            url: 'https://aemail.com/82LL',
+            url: Config.socials.mail,
           },
           {
             name: 'malt',
-            url: 'https://www.malt.fr/profile/virgilribeyre',
+            url: Config.socials.malt,
           },
           {
             name: 'linkedin',
-            url: 'https://www.linkedin.com/in/virgil-ribeyre-810135196',
+            url: Config.socials.linkedin,
           },
           {
             name: 'gitlab',
-            url: 'https://gitlab.com/Zhaith-Izaliel',
+            url: Config.socials.gitlab,
           },
           {
             name: 'github',
-            url: 'https://github.com/Zhaith-Izaliel',
+            url: Config.socials.github,
           },
         ],
       },

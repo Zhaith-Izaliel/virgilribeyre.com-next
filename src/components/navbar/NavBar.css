@@ -1,5 +1,5 @@
 .nav-wrapper {
-  @apply fixed z-40 top-0 w-screen;
+  @apply flex z-40 top-0 w-screen;
 
   .nav-container {
     @apply flex p-4 justify-between w-full items-center space-x-2 px-4 bg-slate-200;
@@ -25,7 +25,7 @@
 
       .nav-item {
         @apply transition-all border-solid border-transparent border-b-2 ease-in-out duration-500;
-      
+
         &:hover {
           @apply border-b-green-500 text-green-500 cursor-pointer;
         }
@@ -33,7 +33,6 @@
     }
   }
 }
-
 
 .mobile-nav-menu {
   @apply absolute z-50 bg-slate-700 text-white p-4 w-screen h-screen;
