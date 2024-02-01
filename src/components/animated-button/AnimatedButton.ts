@@ -1,26 +1,20 @@
-import { defineComponent, ref } from 'vue';
+import { PropType, defineComponent } from 'vue';
 import { useI18n } from 'vue-i18n';
+import type { ButtonType, StyleType } from '@/types';
 
 export default defineComponent({
   props: {
-    iconBg: { type: String, default: '#000000' },
-    iconColor: { type: String, default: '#ffffff' },
+    styleType: {
+      type: String as PropType<StyleType>,
+      default: () => 'default',
+    },
+    type: {
+      type: String as PropType<ButtonType>,
+      default: () => 'block-effect',
+    },
   },
   setup() {
     const { t } = useI18n();
-
-    const state = ref({
-      isIconBefore: true,
-    });
-
-    const hoverEnter = () => {
-      state.value.isIconBefore = false;
-    };
-
-    const hoverLeave = () => {
-      state.value.isIconBefore = true;
-    };
-
-    return { t, hoverEnter, hoverLeave, state };
+    return { t };
   },
 });

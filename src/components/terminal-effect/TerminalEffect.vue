@@ -12,11 +12,11 @@
       <slot></slot>
     </div>
     <div class="terminal-text">
-      <span :class="state.currentClass">
+      <span :class="currentClass">
         {{ currentWord }}
       </span>
-      <span class="animate__animated animate__flash">
-        {{ cursorText }}
+      <span class="animate__animated animate__flash animate__infinite">
+        <slot name="cursor">_</slot>
       </span>
     </div>
   </div>

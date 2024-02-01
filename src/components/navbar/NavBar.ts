@@ -1,6 +1,7 @@
 import { defineComponent, PropType, ref } from 'vue';
 import type { NavBarItem, NavBarSocial } from '@/types';
 import NavBarSocials from '@/components/navbar-socials/NavBarSocials.vue';
+import AnimatedButton from '@/components/animated-button/AnimatedButton.vue';
 import { Menu, Xmark, IconoirProvider } from '@iconoir/vue';
 import { useI18n } from 'vue-i18n';
 
@@ -9,6 +10,7 @@ export default defineComponent({
     Menu /* eslint-disable-line */,
     Xmark,
     NavBarSocials,
+    AnimatedButton,
     IconoirProvider,
   },
   props: {

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-col h-screen w-screen">
     <NavBar
       :items="state.items"
       :socials="state.socials"

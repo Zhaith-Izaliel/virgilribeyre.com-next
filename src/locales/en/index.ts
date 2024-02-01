@@ -1,0 +1,16 @@
+export default {
+  l_virgil_ribeyre: 'Virgil Ribeyre',
+  l_software_developer: 'Software Developer',
+  l_software_development: 'Software Development',
+  l_video_games: 'Game Development',
+  l_devops: 'DevOps',
+  l_fullstack: 'Fullstack Development',
+  l_system: 'System Development',
+  l_years_old: 'years old',
+  l_cta: 'Ready to build your next project?',
+  l_contact_me: "Let's build it together!",
+  l_startpage: 'Home',
+  l_about_me: 'About Me',
+  l_portfolio: 'Portfolio',
+  l_timeline: 'Experiences',
+};

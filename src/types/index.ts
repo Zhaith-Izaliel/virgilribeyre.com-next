@@ -39,7 +39,6 @@ export type NavBarSocial = {
  * Defines a Terminal Text used for the TeminalText component
  */
 export type TerminalText = {
-
   /**
    * The label of the text
    */
@@ -49,9 +48,22 @@ export type TerminalText = {
    * The class applied to the text
    */
   class: string;
+};
 
-  /**
-   * The time it takes for every letter to be typed and deleted
-   */
+export type ButtonType = 'block-effect' | 'cta-effect';
+
+export type StyleType =
+  | 'default'
+  | 'primary'
+  | 'success'
+  | 'info'
+  | 'warning'
+  | 'danger';
+
+export type BackgroundStar = {
+  size: string;
+
   time: number;
-}
+
+  number: number;
+};

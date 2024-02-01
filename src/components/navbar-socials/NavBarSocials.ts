@@ -1,8 +1,14 @@
 import { defineComponent, PropType } from 'vue';
 import type { NavBarSocial } from '@/types';
 import {
-  Linkedin, GitlabFull, Github, Mail, Suitcase, IconoirProvider,
+  Linkedin,
+  GitlabFull,
+  Github,
+  Mail,
+  Suitcase,
+  IconoirProvider,
 } from '@iconoir/vue';
+import AnimatedButton from '../animated-button/AnimatedButton.vue';
 
 export default defineComponent({
   components: {
@@ -12,6 +18,7 @@ export default defineComponent({
     Mail,
     Suitcase,
     IconoirProvider,
+    AnimatedButton,
   },
   props: {
     /**
@@ -24,5 +31,8 @@ export default defineComponent({
      * @default true
      */
     isBar: { type: Boolean, default: () => true },
+
+    iconWidth: { type: String, default: () => '1.5em' },
+    iconHeight: { type: String, default: () => '1.5em' },
   },
 });
