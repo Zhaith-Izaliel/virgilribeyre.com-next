@@ -1,14 +1,8 @@
 .animated-button {
   &.block-effect {
-    @apply cursor-pointer relative flex justify-center items-center uppercase z-20 transition-all ease-in-out duration-500;
+    @apply cursor-pointer relative flex justify-center items-center z-20 transition-all ease-in-out duration-500;
 
     &.default {
-      @apply text-background;
-
-      &:hover {
-        @apply text-default;
-      }
-
       .before {
         @apply border-y-background;
       }
@@ -19,12 +13,6 @@
     }
 
     &.primary {
-      @apply text-primary;
-
-      &:hover {
-        @apply text-default;
-      }
-
       .before {
         @apply border-y-primary;
       }
@@ -35,12 +23,6 @@
     }
 
     &.success {
-      @apply text-success;
-
-      &:hover {
-        @apply text-default;
-      }
-
       .before {
         @apply border-y-success;
       }
@@ -51,12 +33,6 @@
     }
 
     &.info {
-      @apply text-info;
-
-      &:hover {
-        @apply text-default;
-      }
-
       .before {
         @apply border-y-info;
       }
@@ -67,12 +43,6 @@
     }
 
     &.warning {
-      @apply text-warning;
-
-      &:hover {
-        @apply text-default;
-      }
-
       .before {
         @apply border-y-warning;
       }
@@ -83,12 +53,6 @@
     }
 
     &.danger {
-      @apply text-danger;
-
-      &:hover {
-        @apply text-default;
-      }
-
       .before {
         @apply border-y-danger;
       }
@@ -99,6 +63,8 @@
     }
 
     &:hover {
+      @apply text-default;
+
       .before,
       .after {
         @apply opacity-100;

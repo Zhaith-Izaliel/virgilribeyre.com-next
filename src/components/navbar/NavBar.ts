@@ -1,14 +1,17 @@
 import { defineComponent, PropType, ref } from 'vue';
 import type { NavBarItem, NavBarSocial } from '@/types';
+import { Language, Menu, Xmark, IconoirProvider } from '@iconoir/vue';
+import { useI18n } from 'vue-i18n';
 import NavBarSocials from '@/components/navbar-socials/NavBarSocials.vue';
 import AnimatedButton from '@/components/animated-button/AnimatedButton.vue';
-import { Menu, Xmark, IconoirProvider } from '@iconoir/vue';
-import { useI18n } from 'vue-i18n';
+import LangMenu from '@/components/lang-menu/LangMenu.vue';
 
 export default defineComponent({
   components: {
     Menu /* eslint-disable-line */,
     Xmark,
+    Language,
+    LangMenu,
     NavBarSocials,
     AnimatedButton,
     IconoirProvider,

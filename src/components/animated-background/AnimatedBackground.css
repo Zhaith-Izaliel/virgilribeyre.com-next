@@ -19,7 +19,8 @@
     var(--tw-gradient-stops)
   );
   .stars {
-    @apply absolute bg-transparent bottom-full;
+    @apply absolute bg-transparent bottom-full shadow-default;
+    filter: blur(1px);
     animation: animStar linear infinite;
   }
 }

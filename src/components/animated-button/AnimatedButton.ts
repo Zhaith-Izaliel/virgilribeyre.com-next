@@ -6,7 +6,7 @@ export default defineComponent({
   props: {
     styleType: {
       type: String as PropType<StyleType>,
-      default: () => 'default',
+      default: () => 'info',
     },
     type: {
       type: String as PropType<ButtonType>,

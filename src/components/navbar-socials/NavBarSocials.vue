@@ -15,50 +15,34 @@
           :key="i"
           :href="social.url"
           :class="{
-            'hidden md:inline': i !== 0 && isBar,
+            'hidden md:inline': isBar,
           }"
           :target="social.name === 'mail' ? '_self' : '_blank'"
         >
+          <span class="sr-only">{{ t(`sr.l_open_${social.name}`) }}</span>
           <AnimatedButton
             v-if="isBar"
             style-type="info"
-            class="p-4 !text-default"
+            class="p-4 text-default"
           >
-            <div v-if="social.name === 'linkedin'">
-              <Linkedin />
-            </div>
-            <div v-else-if="social.name === 'mail'">
-              <Mail />
-            </div>
-            <div v-else-if="social.name === 'gitlab'">
-              <GitlabFull />
-            </div>
-            <div v-else-if="social.name === 'github'">
-              <Github />
-            </div>
-            <div v-else-if="social.name === 'malt'">
-              <Suitcase />
-            </div>
+            <Linkedin v-if="social.name === 'linkedin'" />
+            <Mail v-else-if="social.name === 'mail'" />
+            <GitlabFull v-else-if="social.name === 'gitlab'" />
+            <Github v-else-if="social.name === 'github'" />
+            <Suitcase v-else-if="social.name === 'malt'" />
+            <Link v-else />
           </AnimatedButton>
+
           <div
             v-else
             class="px-2"
           >
-            <div v-if="social.name === 'linkedin'">
-              <Linkedin />
-            </div>
-            <div v-else-if="social.name === 'mail'">
-              <Mail />
-            </div>
-            <div v-else-if="social.name === 'gitlab'">
-              <GitlabFull />
-            </div>
-            <div v-else-if="social.name === 'github'">
-              <Github />
-            </div>
-            <div v-else-if="social.name === 'malt'">
-              <Suitcase />
-            </div>
+            <Linkedin v-if="social.name === 'linkedin'" />
+            <Mail v-else-if="social.name === 'mail'" />
+            <GitlabFull v-else-if="social.name === 'gitlab'" />
+            <Github v-else-if="social.name === 'github'" />
+            <Suitcase v-else-if="social.name === 'malt'" />
+            <Link v-else />
           </div>
         </a>
       </section>

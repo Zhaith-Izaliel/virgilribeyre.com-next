@@ -49,6 +49,11 @@ export default defineComponent({
      */
     const currentWord = computed(() => {
       const { currentCharacterId } = state;
+
+      if (state.direction.value === 'stopped') {
+        return currentFullWord.value;
+      }
+
       return currentCharacterId.value < 0
         ? ''
         : currentFullWord.value.slice(0, currentCharacterId.value);
@@ -99,6 +104,9 @@ export default defineComponent({
       }
     };
 
+    /**
+     * Defines a watcher that stops the interval when on the last word when `loop === false`
+     */
     watch(state.direction, (newDirection) => {
       if (
         !props.loop &&
@@ -106,9 +114,13 @@ export default defineComponent({
         state.currentWordId.value === props.texts.length - 1
       ) {
         window.clearInterval(state.intervalId);
+        state.direction.value = 'stopped';
       }
     });
 
+    /**
+     * Pause the interval when the word is completely shown, before starting the delete animation
+     */
     watch(state.currentCharacterId, (newId) => {
       if (newId === currentFullWord.value.length) {
         window.clearInterval(state.intervalId);

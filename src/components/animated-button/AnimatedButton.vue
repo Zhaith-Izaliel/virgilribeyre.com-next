@@ -1,36 +1,32 @@
 <template>
-  <button
-    v-if="type === 'cta-effect'"
-    :class="`animated-button ${styleType} ${type}`"
-  >
-    <span
-      class="circle"
-      aria-hidden="true"
-    >
-      <span
-        class="icon"
+  <button :class="`animated-button ${type} ${styleType}`">
+    <template v-if="type === 'cta-effect'">
+      <div
+        class="circle"
         aria-hidden="true"
-      ></span>
-    </span>
-    <span class="main">
-      <slot></slot>
-    </span>
-  </button>
-  <button
-    v-else
-    :class="`animated-button ${type} ${styleType}`"
-  >
-    <span
-      class="before"
-      aria-hidden="true"
-    ></span>
-    <span class="main">
-      <slot></slot>
-    </span>
-    <span
-      class="after"
-      aria-hidden="true"
-    ></span>
+      >
+        <div
+          class="icon"
+          aria-hidden="true"
+        ></div>
+      </div>
+      <div class="main">
+        <slot></slot>
+      </div>
+    </template>
+    <template v-else>
+      <div
+        class="before"
+        aria-hidden="true"
+      ></div>
+      <div class="main">
+        <slot></slot>
+      </div>
+      <div
+        class="after"
+        aria-hidden="true"
+      ></div>
+    </template>
   </button>
 </template>
 <script lang="ts" src="./AnimatedButton.ts"></script>

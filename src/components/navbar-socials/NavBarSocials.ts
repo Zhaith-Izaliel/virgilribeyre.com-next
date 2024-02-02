@@ -7,7 +7,9 @@ import {
   Mail,
   Suitcase,
   IconoirProvider,
+  Link,
 } from '@iconoir/vue';
+import { useI18n } from 'vue-i18n';
 import AnimatedButton from '../animated-button/AnimatedButton.vue';
 
 export default defineComponent({
@@ -17,6 +19,7 @@ export default defineComponent({
     Github,
     Mail,
     Suitcase,
+    Link, // eslint-disable-line
     IconoirProvider,
     AnimatedButton,
   },
@@ -34,5 +37,9 @@ export default defineComponent({
 
     iconWidth: { type: String, default: () => '1.5em' },
     iconHeight: { type: String, default: () => '1.5em' },
+  },
+  setup() {
+    const { t } = useI18n();
+    return { t };
   },
 });

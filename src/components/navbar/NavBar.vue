@@ -6,6 +6,15 @@
           <Menu @click="toggleMenu" />
         </IconoirProvider>
       </section>
+      <section class="nav-logo">
+        <router-link to="/">
+          <img
+            src="@/assets/SilveredIvy_logoOnly.svg"
+            alt="logo"
+            width="48rem"
+          />
+        </router-link>
+      </section>
       <section
         v-if="items.length > 0"
         class="nav-items-container"
@@ -17,13 +26,18 @@
         >
           <AnimatedButton
             style-type="info"
-            class="!text-default px-8 py-4"
+            class="text-default px-8 py-4"
           >
             {{ t(item.label) }}
           </AnimatedButton>
         </router-link>
       </section>
-      <NavBarSocials :socials="socials" />
+      <section class="flex justify-center items-center">
+        <NavBarSocials :socials="socials" />
+        <div class="md:border-l border-l-default md:pl-2 md:ml-2">
+          <LangMenu></LangMenu>
+        </div>
+      </section>
     </nav>
   </div>
   <div

@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue';
+import { defineComponent, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import Config from '@/config';
 import AnimatedButton from '@/components/animated-button/AnimatedButton.vue';
@@ -17,9 +17,22 @@ export default defineComponent({
   setup() {
     const { t } = useI18n();
 
+    // TODO: Change to Luxon
+    const age = computed(() => {
+      const calculateAge = (birthday: Date) => {
+        const ageDifMs = Date.now() - birthday.getTime();
+        const ageDate = new Date(ageDifMs);
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+      };
+
+      const birthday = new Date(99, 11, 18);
+      return calculateAge(birthday);
+    });
+
     return {
       t,
       Config,
+      age,
     };
   },
   data() {
@@ -28,27 +41,27 @@ export default defineComponent({
         terminalTexts: [
           {
             label: 'l_fullstack',
-            class: 'text-purple-500',
+            class: 'text-indigo-500',
             time: 2,
           },
           {
             label: 'l_system',
-            class: 'text-purple-500',
+            class: 'text-indigo-500',
             time: 2,
           },
           {
             label: 'l_devops',
-            class: 'text-purple-500',
+            class: 'text-indigo-500',
             time: 2,
           },
           {
             label: 'l_video_games',
-            class: 'text-purple-500',
+            class: 'text-indigo-500',
             time: 2,
           },
           {
-            label: 'l_software_development',
-            class: 'text-purple-500',
+            label: 'l_software_developer',
+            class: 'text-indigo-500',
             time: 2,
           },
         ],

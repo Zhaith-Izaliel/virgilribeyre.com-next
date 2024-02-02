@@ -13,7 +13,9 @@ export default defineComponent({
       const randomPos = (max: number) => Math.floor(Math.random() * max);
 
       for (i = 0; i < star.number; i += 1) {
-        positions += `${randomPos(200)}vh ${randomPos(200)}vh #FFF`;
+        positions += `${randomPos(200)}vh ${randomPos(
+          200
+        )}vh var(--tw-shadow-color)`;
         if (i !== star.number - 1) {
           positions += ', ';
         } else {

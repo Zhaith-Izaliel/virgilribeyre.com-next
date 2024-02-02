@@ -9,7 +9,7 @@ export default {
         alt: colors.slate[900],
         primary: colors.blue[600],
         success: colors.emerald[600],
-        info: colors.slate[800],
+        info: colors.slate[700],
         warning: colors.amber[600],
         danger: colors.rose[600],
       }),
