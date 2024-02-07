@@ -1,7 +1,7 @@
 <template>
-  <section class="card-grid-container">
+  <section class="cards-grid-container">
     <slot name="header"></slot>
-    <ul :class="`cards-grid ${gridClasses}`">
+    <section :class="`cards-grid ${gridClasses}`">
       <slot
         v-for="(card, i) in shownCards"
         :key="i"
@@ -9,7 +9,7 @@
         :index="i"
       >
       </slot>
-    </ul>
+    </section>
     <button
       v-show="!searched"
       class="show-more"

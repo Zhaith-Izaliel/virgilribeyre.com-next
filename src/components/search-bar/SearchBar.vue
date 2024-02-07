@@ -18,10 +18,11 @@
       </div>
       <input
         id="default-search"
-        v-model="model"
         type="search"
+        :value="modelValue"
         class="block w-full ml-2 px-6 py-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-primary focus:border-primary"
         :placeholder="t(placeholder)"
+        @input="updateModel"
       />
     </div>
   </form>

@@ -9,14 +9,19 @@ export default defineComponent({
   },
   props: {
     placeholder: { type: String, default: () => 'l_search_placeholder' },
+    modelValue: { type: String, required: true },
   },
-  setup() {
+  emits: ['update:modelValue'],
+  setup(_, ctx) {
     const { t } = useI18n();
-    const model = defineModel({ required: true });
+
+    const updateModel = (event: any) => {
+      ctx.emit('update:modelValue', event.target.value);
+    };
 
     return {
       t,
-      model,
+      updateModel,
     };
   },
 });
