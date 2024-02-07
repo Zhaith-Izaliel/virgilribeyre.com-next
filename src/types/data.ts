@@ -60,5 +60,5 @@ export type Skill = {
   /**
    * The level of skill, from 1 (beginner) to 5 (expert)
    */
-  level: 1 | 2 | 3 | 4 | 5;
+  level: 1 | 2 | 3 | 4 | 5 | 6;
 };

@@ -9,6 +9,6 @@
   <div class="pt-6 z-10 bg-slate-100">
     <AboutMe id="#about-me"></AboutMe>
   </div>
-  <Footer></Footer>
+  <FooterVue></FooterVue>
 </template>
 <script lang="ts" src="./Home.ts"></script>
