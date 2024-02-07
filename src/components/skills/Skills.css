@@ -1,9 +1,9 @@
 .skills {
-  @apply relative w-full h-full flex flex-col items-center shadow-indigo-50 shadow mb-64 overflow-x-hidden;
+  @apply relative isolate w-full h-full flex flex-col items-center pb-10 overflow-x-hidden;
 
   .background-container {
-    @apply absolute isolate -z-10 px-6 py-24 sm:py-32 lg:px-8 min-h-full min-w-full;
-    mask-image: linear-gradient(transparent, black);
+    @apply absolute -z-10 h-full w-full;
+    mask-image: linear-gradient(transparent, black, black, transparent);
     background-image: url('@/assets/grid.svg');
 
     .right {
@@ -11,12 +11,12 @@
     }
 
     .left {
-      @apply absolute h-full w-full -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.900),white)] opacity-20;
+      @apply -z-10 absolute h-full w-full bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.900),white)] opacity-20;
     }
   }
 
   .skills-grid {
-    @apply w-11/12 xl:w-2/3  mx-auto m-6 grid gap-8 grid-cols-1 md:grid-cols-3 xl:grid-cols-4;
+    @apply w-11/12 xl:w-1/2 mx-auto m-6 grid gap-8 grid-cols-1 md:grid-cols-3;
 
     .skill-item {
       @apply w-4/5 mx-auto sm:w-full min-h-48 flex flex-col bg-gradient-to-t from-violet-50 space-y-4 px-4 py-2 shadow-xl shadow-violet-200/50 rounded-xl backdrop-blur-2xl border-slate-300/50 border-2;

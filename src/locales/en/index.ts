@@ -22,4 +22,9 @@ export default {
   l_about_me: 'About Me',
   l_portfolio: 'Portfolio',
   l_timeline: 'Experiences',
+  l_skills: 'Skills',
+  l_search_placeholder: 'Search skills',
+  l_icons8_credit: 'Colored icons provided by',
+  l_icons8: 'Icons8',
+  l_copyright: '© {currentYear} Virgil Ribeyre. All rights reserved.',
 };

@@ -6,8 +6,9 @@
     />
     <Landing id="#top"></Landing>
   </div>
-  <div class="relative pt-6 z-10 bg-slate-100">
+  <div class="pt-6 z-10 bg-slate-100">
     <AboutMe id="#about-me"></AboutMe>
   </div>
+  <Footer></Footer>
 </template>
 <script lang="ts" src="./Home.ts"></script>

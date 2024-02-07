@@ -3,3 +3,11 @@
     @apply text-center;
   }
 }
+
+.cta-button {
+  @apply min-w-[66%];
+
+  @screen lg {
+    min-width: 33%;
+  }
+}

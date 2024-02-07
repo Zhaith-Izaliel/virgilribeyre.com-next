@@ -1,6 +1,6 @@
 @import url('./markdown');
 
 :root {
-  @apply bg-white text-info;
+  @apply bg-slate-100 text-info;
   font-size: 10pt;
 }
