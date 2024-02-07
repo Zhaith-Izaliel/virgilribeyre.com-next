@@ -1,6 +1,6 @@
 <template>
   <AnimatedBackground
-    class="h-screen w-screen"
+    class="h-full w-full"
     :stars="state.stars"
   >
     <div class="landing">
@@ -10,33 +10,33 @@
       >
         <img
           alt="Virgil"
-          class="lg:h-full absolute md:bottom-0"
+          class="lg:h-11/12 absolute md:bottom-0"
           src="@/assets/VR-Large-First.png"
         />
       </div>
       <div class="text-container">
-        <h1 class="text-5xl md:text-8xl">
+        <h1 class="text-4xl sm:text-5xl md:text-8xl">
           {{ t('l_virgil_ribeyre') }}
         </h1>
         <TerminalEffect
           :is-col="true"
           :pause-time="1000"
           :texts="state.terminalTexts"
-          class="text-4xl lg:text-5xl"
+          class="text-3xl sm:text-4xl lg:text-5xl"
         >
         </TerminalEffect>
-        <h2 class="text-2xl md:text-3xl text-slate-400">
+        <h2 class="text-xl sm:text-2xl md:text-3xl text-slate-400">
           {{ t('l_years_old', { age }) }}
         </h2>
         <a
-          :href="Config.socials.malt"
+          :href="state.malt.url"
           target="_blank"
-          class="w-3/5 lg:w-2/5 xl:w-7/12"
+          class="w-11/12 md:w-3/5 lg:w-2/5 xl:w-7/12"
         >
           <AnimatedButton
             type="cta-effect"
             style-type="success"
-            class="text-lg md:text-2xl min-w-full"
+            class="text-base sm:text-lg md:text-2xl min-w-full"
             >{{ t('l_cta') }}</AnimatedButton
           >
         </a>

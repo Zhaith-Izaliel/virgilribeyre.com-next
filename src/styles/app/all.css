@@ -1,3 +1,6 @@
-a {
-  all: unset;
+@import url('./markdown');
+
+:root {
+  @apply bg-white text-info;
+  font-size: 10pt;
 }

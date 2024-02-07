@@ -12,7 +12,7 @@ export default {
   l_fullstack: 'Developpement Full-Stack',
   l_system: 'Developpement Système',
   l_years_old: '{age} ans',
-  l_cta: 'Un projet? Réalisons le ensemble!',
+  l_cta: 'Un projet ? Réalisons le ensemble !',
   l_startpage: 'Accueil',
   l_about_me: 'À propos',
   l_portfolio: 'Portfolio',

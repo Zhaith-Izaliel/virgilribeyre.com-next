@@ -1,8 +1,8 @@
 .nav-wrapper {
-  @apply flex z-40 top-0 w-screen;
+  @apply fixed flex z-40 top-0 w-screen;
 
   .nav-container {
-    @apply flex text-xl justify-between w-full py-2 items-center space-x-2 px-4 bg-alt;
+    @apply flex text-xl justify-between w-full py-2 items-center space-x-2 px-4;
 
     .nav-logo {
       @apply hidden cursor-pointer;
@@ -35,7 +35,7 @@
 }
 
 .mobile-nav-menu {
-  @apply absolute z-50 bg-background text-default p-4 w-screen h-screen;
+  @apply fixed z-50 bg-background/85 backdrop-blur-2xl text-default p-4 w-screen h-screen;
   @apply text-3xl;
 
   .mobile-nav-container {

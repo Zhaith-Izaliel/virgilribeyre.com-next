@@ -1,5 +1,13 @@
 <template>
-  <div class="nav-wrapper">
+  <div
+    :class="[
+      'nav-wrapper',
+      {
+        'bg-alt': !scrolled,
+        'bg-alt/85 backdrop-blur-xl': scrolled,
+      },
+    ]"
+  >
     <nav class="nav-container">
       <section class="nav-menu-btn">
         <IconoirProvider>
@@ -44,9 +52,9 @@
     :class="[
       'mobile-nav-menu animate__animated animate__faster',
       {
-        hidden: state.menuState === 'initial',
-        animate__slideInDown: state.menuState === 'open',
-        animate__slideOutUp: state.menuState === 'closed',
+        hidden: menuState === 'initial',
+        animate__slideInDown: menuState === 'open',
+        animate__slideOutUp: menuState === 'closed',
       },
     ]"
   >

@@ -19,7 +19,7 @@
     var(--tw-gradient-stops)
   );
   .stars {
-    @apply absolute bg-transparent bottom-full shadow-default;
+    @apply absolute bg-transparent bottom-full -z-40 shadow-default;
     filter: blur(1px);
     animation: animStar linear infinite;
   }

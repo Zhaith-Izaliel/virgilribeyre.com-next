@@ -1,6 +1,7 @@
 import { defineComponent, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
-import Config from '@/config';
+import { terminalTexts } from '@/data';
+import { getSocialByName } from '@/hooks';
 import AnimatedButton from '@/components/animated-button/AnimatedButton.vue';
 import TerminalEffect from '@/components/terminal-effect/TerminalEffect.vue';
 import AnimatedBackground from '@/components/animated-background/AnimatedBackground.vue';
@@ -31,41 +32,14 @@ export default defineComponent({
 
     return {
       t,
-      Config,
       age,
     };
   },
   data() {
     return {
       state: {
-        terminalTexts: [
-          {
-            label: 'l_fullstack',
-            class: 'text-indigo-500',
-            time: 2,
-          },
-          {
-            label: 'l_system',
-            class: 'text-indigo-500',
-            time: 2,
-          },
-          {
-            label: 'l_devops',
-            class: 'text-indigo-500',
-            time: 2,
-          },
-          {
-            label: 'l_video_games',
-            class: 'text-indigo-500',
-            time: 2,
-          },
-          {
-            label: 'l_software_developer',
-            class: 'text-indigo-500',
-            time: 2,
-          },
-        ],
-
+        terminalTexts,
+        malt: getSocialByName('malt'),
         stars: [
           {
             size: '1px',

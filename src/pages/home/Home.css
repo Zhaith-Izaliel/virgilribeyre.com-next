@@ -1,0 +1,4 @@
+.faded-background {
+  @apply absolute h-full w-full top-0 bottom-0 bg-white;
+  mask-image: linear-gradient(transparent, black);
+}

@@ -1,9 +1,13 @@
 import sr from './sr';
 import locale from './locale';
+import markdown from './markdown';
+import skills from './skills';
 
 export default {
+  markdown,
   sr,
   locale,
+  skills,
   l_language: 'Language',
   l_virgil_ribeyre: 'Virgil Ribeyre',
   l_software_developer: 'Software Developer',

@@ -1,5 +1,5 @@
 import { defineComponent, PropType } from 'vue';
-import type { NavBarSocial } from '@/types';
+import type { Social } from '@/types';
 import {
   Linkedin,
   GitlabFull,
@@ -27,7 +27,7 @@ export default defineComponent({
     /**
      * The list of socials to show
      */
-    socials: { type: Array as PropType<NavBarSocial[]>, default: () => [] },
+    socials: { type: Array as PropType<Social[]>, default: () => [] },
 
     /**
      * Defines if the socials are used in the NavBar or in the NavMenu

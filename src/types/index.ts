@@ -1,4 +1,5 @@
 import { RouteLocationRaw } from 'vue-router';
+export * from './data';
 
 /**
  * Defines a Navbar item
@@ -18,36 +19,6 @@ export type NavBarItem = {
    * The link to which the item refers to
    */
   route: RouteLocationRaw;
-};
-
-/**
- * Defines a Navbar social link
- */
-export type NavBarSocial = {
-  /**
-   * Name of the social link
-   */
-  name: 'gitlab' | 'github' | 'mail' | 'linkedin' | 'malt';
-
-  /**
-   * URL of the social link
-   */
-  url: string;
-};
-
-/**
- * Defines a Terminal Text used for the TeminalText component
- */
-export type TerminalText = {
-  /**
-   * The label of the text
-   */
-  label: string;
-
-  /**
-   * The class applied to the text
-   */
-  class: string;
 };
 
 export type ButtonType = 'block-effect' | 'cta-effect';

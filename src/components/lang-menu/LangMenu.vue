@@ -31,7 +31,7 @@
       leave-to-class="transform opacity-0 scale-95"
     >
       <MenuItems
-        class="absolute space-y-2 text-default flex flex-col right-0 z-20 mt-3 w-48 origin-top-right rounded-md bg-alt shadow-lg shadow-default/20 ring-1 ring-black ring-opacity-5 focus:outline-none"
+        class="absolute space-y-2 text-default flex flex-col right-0 z-20 mt-3 w-48 origin-top-right rounded-md bg-alt/75 backdrop-blur-3xl shadow-lg shadow-default/20 ring-1 ring-black ring-opacity-5 focus:outline-none"
       >
         <MenuItem
           v-for="locale in availableLocales"
@@ -39,7 +39,7 @@
         >
           <AnimatedButton
             class="p-4 w-full"
-            @click.prevent="setLocale(locale)"
+            @click="setLocale(locale)"
           >
             <div class="w-full flex space-x-4">
               <img

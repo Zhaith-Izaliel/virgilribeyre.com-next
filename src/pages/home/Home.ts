@@ -1,12 +1,14 @@
 import { defineComponent } from 'vue';
 import NavBar from '@/components/navbar/NavBar.vue';
 import Landing from '@/pages/landing/Landing.vue';
-import Config from '@/config';
+import AboutMe from '@/pages/about-me/AboutMe.vue';
+import { socials } from '@/data';
 
 export default defineComponent({
   components: {
     NavBar,
     Landing,
+    AboutMe,
   },
   data() {
     return {
@@ -29,28 +31,7 @@ export default defineComponent({
             route: '/#timeline',
           },
         ],
-        socials: [
-          {
-            name: 'mail',
-            url: Config.socials.mail,
-          },
-          {
-            name: 'malt',
-            url: Config.socials.malt,
-          },
-          {
-            name: 'linkedin',
-            url: Config.socials.linkedin,
-          },
-          {
-            name: 'gitlab',
-            url: Config.socials.gitlab,
-          },
-          {
-            name: 'github',
-            url: Config.socials.github,
-          },
-        ],
+        socials,
       },
     };
   },
