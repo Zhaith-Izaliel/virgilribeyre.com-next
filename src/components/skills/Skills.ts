@@ -1,19 +1,17 @@
 import { PropType, computed, defineComponent, ref } from 'vue';
 import { Skill } from '@/types';
 import { useI18n } from 'vue-i18n';
-import VueMarkdown from 'vue-markdown-render';
 import SearchBar from '@/components/search-bar/SearchBar.vue';
 import CardGrid from '@/components/card-grid/CardGrid.vue';
-import Card from '@/components/card/Card.vue';
+import SkillCard from '@/components/skill-card/SkillCard.vue';
 import { IconoirProvider, Box3dCenter } from '@iconoir/vue';
 
 export default defineComponent({
   components: {
-    VueMarkdown,
     IconoirProvider,
     Box3dCenter,
     SearchBar,
-    Card,
+    SkillCard,
     CardGrid,
   },
   props: {
@@ -36,14 +34,7 @@ export default defineComponent({
       );
     });
 
-    const getSkillImg = (name: string) =>
-      new URL(`/src/assets/skills/${name}.svg`, import.meta.url);
-
-    const emptySkillCells = (level: number) => 6 - level;
-
     return {
-      getSkillImg,
-      emptySkillCells,
       state,
       searchResults,
       t,

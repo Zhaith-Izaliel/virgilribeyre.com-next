@@ -23,8 +23,12 @@ export default {
   l_portfolio: 'Portfolio',
   l_timeline: 'Experiences',
   l_skills: 'Skills',
-  l_search_placeholder: 'Search skills',
+  l_search_placeholder: 'Search',
+  l_search_skills_placeholder: 'Search skills',
   l_icons8_credit: 'Colored icons provided by',
   l_icons8: 'Icons8',
+  l_work_with_me: "Let's work together!",
+  l_show_more: 'Show more',
+  l_show_less: 'Show less',
   l_copyright: '© {currentYear} Virgil Ribeyre. All rights reserved.',
 };

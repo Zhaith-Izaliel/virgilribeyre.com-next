@@ -1,3 +1,0 @@
-.card {
-  @apply mx-auto min-h-48 flex flex-col bg-gradient-to-t from-violet-50 space-y-4 px-4 py-2 shadow-xl shadow-violet-200/50 rounded-xl backdrop-blur-2xl border-slate-300/50 border-2;
-}
