@@ -1,0 +1,19 @@
+.project-card {
+  @apply relative w-full min-h-48 rounded-xl text-default shadow-xl shadow-indigo-200;
+
+  .project-info-container {
+    @apply flex flex-col space-y-2 rounded-xl p-4 justify-end w-full h-full absolute top-0 bg-gradient-to-b from-transparent to-background backdrop-blur-sm;
+
+    .project-title {
+      @apply text-xl tracking-tight font-semibold border-b pb-2 border-default;
+    }
+
+    .learn-more-container {
+      @apply w-full flex pt-4 justify-end items-center uppercase tracking-tight font-semibold;
+
+      .learn-more {
+        @apply flex justify-between items-center space-x-2 hover:text-blue-400 transition-all duration-500 ease-in-out cursor-pointer;
+      }
+    }
+  }
+}

@@ -1,25 +1,25 @@
-import type { Social, TerminalText, Skill } from '@/types';
+import type { Social, TerminalText, Skill, Project } from '@/types';
 
 export const socials: Social[] = [
   {
     name: 'mail',
-    url: 'https://aemail.com/82LL',
+    url: new URL('https://aemail.com/82LL'),
   },
   {
     name: 'malt',
-    url: 'https://www.malt.fr/profile/virgilribeyre',
+    url: new URL('https://www.malt.fr/profile/virgilribeyre'),
   },
   {
     name: 'linkedin',
-    url: 'https://www.linkedin.com/in/virgil-ribeyre-810135196',
+    url: new URL('https://www.linkedin.com/in/virgil-ribeyre-810135196'),
   },
   {
     name: 'gitlab',
-    url: 'https://gitlab.com/Zhaith-Izaliel',
+    url: new URL('https://gitlab.com/Zhaith-Izaliel'),
   },
   {
     name: 'github',
-    url: 'https://github.com/Zhaith-Izaliel',
+    url: new URL('https://github.com/Zhaith-Izaliel'),
   },
 ];
 
@@ -29,6 +29,16 @@ export const skills: Skill[] = [
     label: 'skills.l_vuejs',
     level: 5,
     description: 'skills.l_vuejs_description',
+  },
+];
+
+export const projects: Project[] = [
+  {
+    name: 'testability-linter',
+    label: 'projects.l_testability_linter',
+    description: 'projects.l_testability_linter_description',
+    url: new URL('https://gitlab.com/Zhaith-Izaliel/testability-linter'),
+    img: new URL('/src/assets/projects/default.png', import.meta.url),
   },
 ];
 

@@ -15,7 +15,7 @@ export type Social = {
   /**
    * URL of the social link
    */
-  url: string;
+  url: URL;
 };
 
 /**
@@ -33,13 +33,13 @@ export type TerminalText = {
   class: string;
 
   /**
-   * The time in ms to write the text defined in `label`
+   * The time in ms to write a letter of the text defined in `label`
    */
   time: number;
 };
 
 /**
- * Defines a skill to showoff, usually a programming language
+ * Defines a skill, usually a programming language
  */
 export type Skill = {
   /**
@@ -48,7 +48,7 @@ export type Skill = {
   label: string;
 
   /**
-   * Internal name of the skill
+   * Internal name of the skill. The name is used to fetched its SVG from `@/assets/skills/${name}.svg`
    */
   name: string;
 
@@ -61,4 +61,51 @@ export type Skill = {
    * The level of skill, from 1 (beginner) to 5 (expert)
    */
   level: 1 | 2 | 3 | 4 | 5 | 6;
+};
+
+/**
+ * Defines a project, can be a git repository or a proprietary software I worked on
+ */
+export type Project = {
+  /**
+   * The label of the project
+   */
+  label: string;
+
+  /**
+   * The internal name of the project
+   */
+  name: string;
+
+  /**
+   * VueI18n label description of the Project
+   */
+  description: string;
+
+  /**
+   * The URL of the image used as a backdrop for the project
+   */
+  img: URL;
+
+  /**
+   * The URL to the project, if applicable
+   */
+  url?: URL;
+};
+
+export type TimelineEvent = {
+  /**
+   * The label of the event
+   */
+  label: string;
+
+  /**
+   * The internal name of the event
+   */
+  name: string;
+
+  /**
+   * VueI18n label description of the event
+   */
+  description: string;
 };

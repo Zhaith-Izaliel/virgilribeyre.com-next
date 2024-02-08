@@ -2,6 +2,7 @@ import { defineComponent } from 'vue';
 import NavBar from '@/components/navbar/NavBar.vue';
 import Landing from '@/pages/landing/Landing.vue';
 import AboutMe from '@/pages/about-me/AboutMe.vue';
+import Portfolio from '@/pages/portfolio/Portfolio.vue';
 import FooterVue from '@/pages/footer/Footer.vue';
 import { socials } from '@/data';
 
@@ -10,6 +11,7 @@ export default defineComponent({
     NavBar,
     Landing,
     AboutMe,
+    Portfolio,
     FooterVue,
   },
   data() {

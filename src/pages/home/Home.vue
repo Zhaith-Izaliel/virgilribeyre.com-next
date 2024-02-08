@@ -6,8 +6,9 @@
     />
     <Landing id="#top"></Landing>
   </div>
-  <div class="pt-6 z-10 bg-slate-100">
-    <AboutMe id="#about-me"></AboutMe>
+  <div class="w-full pt-6 z-10 bg-slate-100">
+    <AboutMe id="about-me"></AboutMe>
+    <Portfolio id="portfolio"></Portfolio>
   </div>
   <FooterVue></FooterVue>
 </template>

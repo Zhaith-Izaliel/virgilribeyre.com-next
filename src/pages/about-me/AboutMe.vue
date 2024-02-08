@@ -29,6 +29,6 @@
   </div>
 </template>
 <script lang="ts" src="./AboutMe.ts"></script>
-<style>
+<style scoped>
 @import url('./AboutMe.css');
 </style>

@@ -6,6 +6,7 @@ import AnimatedButton from '@/components/animated-button/AnimatedButton.vue';
 import TerminalEffect from '@/components/terminal-effect/TerminalEffect.vue';
 import AnimatedBackground from '@/components/animated-background/AnimatedBackground.vue';
 import { SendSolidSolid, SendDiagonalSolidSolid } from '@iconoir/vue';
+import { DateTime } from 'luxon';
 
 export default defineComponent({
   components: {
@@ -18,16 +19,11 @@ export default defineComponent({
   setup() {
     const { t } = useI18n();
 
-    // TODO: Change to Luxon
     const age = computed(() => {
-      const calculateAge = (birthday: Date) => {
-        const ageDifMs = Date.now() - birthday.getTime();
-        const ageDate = new Date(ageDifMs);
-        return Math.abs(ageDate.getUTCFullYear() - 1970);
-      };
-
-      const birthday = new Date(99, 11, 18);
-      return calculateAge(birthday);
+      const today = DateTime.now();
+      const birthday = DateTime.local(1999, 12, 18);
+      const calculatedAge = today.diff(birthday, ['years']).toObject().years;
+      return Math.floor(calculatedAge || 24);
     });
 
     return {

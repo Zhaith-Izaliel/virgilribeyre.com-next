@@ -2,12 +2,14 @@ import sr from './sr';
 import locale from './locale';
 import markdown from './markdown';
 import skills from './skills';
+import projects from './projects';
 
 export default {
   markdown,
   sr,
   locale,
   skills,
+  projects,
   l_language: 'Language',
   l_virgil_ribeyre: 'Virgil Ribeyre',
   l_software_developer: 'Software Developer',
@@ -30,5 +32,7 @@ export default {
   l_work_with_me: "Let's work together!",
   l_show_more: 'Show more',
   l_show_less: 'Show less',
+  l_projects: 'Projects',
+  l_learn_more: 'Learn more',
   l_copyright: '© {currentYear} Virgil Ribeyre. All rights reserved.',
 };

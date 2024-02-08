@@ -1,9 +1,3 @@
-.markdown-render {
-  p {
-    @apply text-center;
-  }
-}
-
 .cta-button {
   @apply min-w-[66%];
 

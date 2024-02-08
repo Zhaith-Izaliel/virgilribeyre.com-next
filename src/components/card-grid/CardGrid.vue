@@ -11,7 +11,7 @@
       </slot>
     </section>
     <button
-      v-show="!searched"
+      v-show="!searched && cards.length > max"
       class="show-more"
       @click.prevent="showMore"
     >
