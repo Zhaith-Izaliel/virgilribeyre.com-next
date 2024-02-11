@@ -21,7 +21,7 @@ export default defineComponent({
     return {
       state: {
         skills,
-        malt: getSocialByName('malt'),
+        mail: getSocialByName('mail'),
       },
     };
   },

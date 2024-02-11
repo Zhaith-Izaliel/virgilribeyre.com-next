@@ -1,3 +1,5 @@
+import { DateTime } from 'luxon';
+
 /**
  * Defines the acceptable name of social
  */
@@ -108,4 +110,14 @@ export type TimelineEvent = {
    * VueI18n label description of the event
    */
   description: string;
+
+  /**
+   * The start of the event
+   */
+  start: DateTime;
+
+  /**
+   * The end of the event
+   */
+  end: DateTime;
 };

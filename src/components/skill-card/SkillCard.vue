@@ -4,6 +4,7 @@
       <img
         :src="getSkillImg(skill.name)"
         :alt="skill.name"
+        class="h-16 xl:h-20"
       />
       <h1 class="skill-title">
         {{ t(skill.label) }}
@@ -14,7 +15,7 @@
         <li
           v-for="j in skill.level"
           :key="j"
-          class="w-1/5 h-1 bg-indigo-600"
+          class="w-1/6 h-1 bg-indigo-600"
         ></li>
         <li
           class="min-w-3 min-h-3 border-2 border-indigo-600 rounded-full"
@@ -22,7 +23,7 @@
         <li
           v-for="k in emptySkillCells(skill.level)"
           :key="k"
-          :class="`w-1/5 h-1 bg-slate-300 ${
+          :class="`w-1/6 h-1 bg-slate-300 ${
             skill.level === 1 ? 'no-skill-cell' : ''
           }`"
         ></li>

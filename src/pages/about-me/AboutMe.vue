@@ -11,8 +11,7 @@
         class="w-full flex items-center justify-center lg:justify-end text-lg"
       >
         <a
-          :href="state.malt.url"
-          target="_blank"
+          :href="state.mail.url"
           class="xl:min-w-[25%] lg:min-w-[33%] min-w-[66%]"
         >
           <AnimatedButton

@@ -17,7 +17,7 @@
       <section class="nav-logo">
         <router-link to="/">
           <img
-            src="@/assets/SilveredIvy_logoOnly.svg"
+            src="@/assets/silvered-ivy.svg"
             alt="logo"
             width="48rem"
           />

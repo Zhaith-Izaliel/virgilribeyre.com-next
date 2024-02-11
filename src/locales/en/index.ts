@@ -34,5 +34,7 @@ export default {
   l_show_less: 'Show less',
   l_projects: 'Projects',
   l_learn_more: 'Learn more',
+  l_want_more: 'More on Gitlab',
+  l_now: 'Today',
   l_copyright: '© {currentYear} Virgil Ribeyre. All rights reserved.',
 };
