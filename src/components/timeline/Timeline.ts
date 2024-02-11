@@ -2,7 +2,7 @@ import { PropType, computed, defineComponent } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { TimelineEvent } from '@/types';
 import TimelineCard from '@/components/timeline-card/TimelineCard.vue';
-import { sortEvents } from '@/hooks';
+import { sortEvents } from '@/hooks/data';
 
 export default defineComponent({
   components: {

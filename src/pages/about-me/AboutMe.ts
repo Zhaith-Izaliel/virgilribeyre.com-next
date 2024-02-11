@@ -4,7 +4,7 @@ import { skills } from '@/data';
 import Skills from '@/components/skills/Skills.vue';
 import VueMarkdown from 'vue-markdown-render';
 import AnimatedButton from '@/components/animated-button/AnimatedButton.vue';
-import { getSocialByName } from '@/hooks';
+import { getSocialByName } from '@/hooks/data';
 
 export default defineComponent({
   components: {

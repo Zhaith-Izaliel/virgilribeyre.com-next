@@ -12,5 +12,6 @@
     <Experiences id="timeline"></Experiences>
   </div>
   <FooterVue></FooterVue>
+  <BackToTop></BackToTop>
 </template>
 <script lang="ts" src="./Home.ts"></script>

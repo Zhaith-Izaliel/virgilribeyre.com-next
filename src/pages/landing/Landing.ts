@@ -1,7 +1,7 @@
 import { defineComponent, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { terminalTexts } from '@/data';
-import { getSocialByName } from '@/hooks';
+import { getSocialByName } from '@/hooks/data';
 import AnimatedButton from '@/components/animated-button/AnimatedButton.vue';
 import TerminalEffect from '@/components/terminal-effect/TerminalEffect.vue';
 import AnimatedBackground from '@/components/animated-background/AnimatedBackground.vue';

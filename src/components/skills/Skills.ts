@@ -5,7 +5,7 @@ import SearchBar from '@/components/search-bar/SearchBar.vue';
 import CardGrid from '@/components/card-grid/CardGrid.vue';
 import SkillCard from '@/components/skill-card/SkillCard.vue';
 import { IconoirProvider, Box3dCenter } from '@iconoir/vue';
-import { sortSkills } from '@/hooks';
+import { sortSkills } from '@/hooks/data';
 import escapeStringRegexp from 'escape-string-regexp';
 
 export default defineComponent({

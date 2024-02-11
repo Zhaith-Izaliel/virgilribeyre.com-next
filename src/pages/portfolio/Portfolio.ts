@@ -4,7 +4,7 @@ import { projects } from '@/data';
 import Projects from '@/components/projects/Projects.vue';
 import AnimatedButton from '@/components/animated-button/AnimatedButton.vue';
 import VueMarkdown from 'vue-markdown-render';
-import { getSocialByName } from '@/hooks';
+import { getSocialByName } from '@/hooks/data';
 
 export default defineComponent({
   components: {
