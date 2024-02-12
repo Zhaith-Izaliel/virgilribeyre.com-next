@@ -1,4 +1,5 @@
 import { RouteLocationRaw } from 'vue-router';
+
 export * from './data';
 
 /**
@@ -38,3 +39,5 @@ export type BackgroundStar = {
 
   number: number;
 };
+
+export type AnimationType = 'fadeIn' | 'expand' | 'retract';

@@ -12,6 +12,19 @@ import Frontend from './frontend.md';
 import Git from './git.md';
 import GraphQL from './graphql.md';
 import Haskell from './haskell.md';
+import Html from './html.md';
+import Java from './java.md';
+import Javascript from './javascript.md';
+import Kubernetes from './kubernetes.md';
+import MongoDB from './mongodb.md';
+import Mysql from './mysql.md';
+import Nix from './nix.md';
+import NodejsMD from './nodejs.md';
+import PostCSS from './postcss.md';
+import PostgreSQL from './postgresql.md';
+import Python from './python.md';
+import TypescriptMD from './typescript.md';
+import Sass from './sass.md';
 
 export default {
   l_backend: 'Backend Development',
@@ -41,40 +54,41 @@ export default {
   l_haskell: 'Haskell',
   l_haskell_description: Haskell,
   l_html: 'HTML',
-
+  l_html_description: Html,
   l_java: 'Java',
-
+  l_java_description: Java,
   l_javascript: 'Javascript',
-
+  l_javascript_description: Javascript,
   l_kubernetes: 'Kubernetes',
-
+  l_kubernetes_description: Kubernetes,
   l_mongodb: 'MongoDB',
-
+  l_mongodb_description: MongoDB,
   l_mysql: 'MySQL',
-
+  l_mysql_description: Mysql,
   l_nix: 'Nix',
-
+  l_nix_description: Nix,
   l_nodejs: 'NodeJS',
-
+  l_nodejs_description: NodejsMD,
   l_postcss: 'PostCSS',
-
+  l_postcss_description: PostCSS,
   l_postgresql: 'PostgreSQL',
-
+  l_postgresql_description: PostgreSQL,
   l_python: 'Python',
-
+  l_python_description: Python,
   l_react: 'React.js',
-
+  // l_react_description: ReactMD,
   l_rust: 'Rust',
-
+  // l_rust_description: Rust,
   l_sass: 'Sass',
-
+  l_sass_description: Sass,
   l_typescript: 'Typescript',
-
+  l_typescript_description: TypescriptMD,
   l_unity: 'Unity',
-
+  // l_unity_description: Unity,
   l_unreal_engine: 'Unreal Engine',
-
+  // l_unreal_engine_description: Unreal,
   l_vitejs: 'Vite.js',
+  // l_vitejs_description: ViteJS,
   l_vuejs: 'Vue.js',
   l_vuejs_description: VueJs,
 };

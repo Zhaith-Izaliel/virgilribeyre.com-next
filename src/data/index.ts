@@ -82,7 +82,7 @@ export const skills: Skill[] = [
   {
     name: 'react',
     label: 'skills.l_react',
-    level: 4,
+    level: 3,
     description: 'skills.l_react_description',
   },
   {

@@ -10,15 +10,18 @@
   p {
     @apply text-lg mb-4 sm:text-xl md:text-2xl;
   }
-
-  strong {
-    @apply text-primary font-semibold;
-  }
 }
 
 .markdown-skill-render {
   p {
     @apply text-base;
+  }
+}
+
+.markdown-render,
+.markdown-skill-render {
+  a {
+    @apply text-purple-500 underline cursor-pointer hover:divide-purple-400;
   }
 
   strong {
