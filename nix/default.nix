@@ -1,11 +1,11 @@
 {buildNpmPackage}:
 buildNpmPackage {
   pname = "virgilribeyre.com";
-  version = "1.0.1";
+  version = "1.0.2";
 
   src = ../.;
 
-  npmDepsHash = "sha256-QuInZh2EX0DJNv/yxRl14w4KW+bZBQwQItTEcRUADbY=";
+  npmDepsHash = "sha256-tD/NT+ShUFxnFRxB2EgMwfFaO4wMp2okmWAQMrGs59Q=";
 
   installPhase = ''
     cp -r dist $out
