@@ -21,10 +21,14 @@ export default defineComponent({
       locale.value = newLocale;
     };
 
+    const getFlag = (locale: string) =>
+      new URL(`/src/assets/flags/${locale}.svg`, import.meta.url).toString();
+
     return {
       t,
       availableLocales,
       setLocale,
+      getFlag,
     };
   },
 });
