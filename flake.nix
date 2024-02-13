@@ -32,12 +32,7 @@
               default = workspaceShell;
             };
             packages = {
-              default =
-                (import ./nix {
-                  inherit pkgs system;
-                  nodejs = nodejs-package;
-                })
-                .package;
+              default = pkgs.callPackage ./nix {};
               shell = devShells.default;
             };
           }
