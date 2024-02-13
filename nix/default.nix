@@ -1,7 +1,7 @@
 {buildNpmPackage}:
 buildNpmPackage {
   pname = "virgilribeyre.com";
-  version = "1.0.1";
+  version = "1.0.2";
 
   src = ../.;
 
