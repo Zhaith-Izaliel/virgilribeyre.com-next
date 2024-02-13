@@ -1,0 +1,1 @@
+NixOS has been my **personal** and **professional OS** for **years**. I know **advanced features** of the ecosystem and its language that I gathered reading every bit of information I could, even `Nixpkgs` code source, considering Nix is not the most thoroughly documented ecosystem.

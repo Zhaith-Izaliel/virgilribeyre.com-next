@@ -1,3 +1,2 @@
-/* @import "./vendors/all"; */
-@import "./app/all";
-
+@import url('./vendors/all');
+@import url('./app/all');

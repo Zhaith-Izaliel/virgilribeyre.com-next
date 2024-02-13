@@ -1,0 +1,1 @@
+Similarly to CSS, PostCSS is a language I know extremely well. I am even able to **create complex animations and layouts using PostCSS only**. However, as much as PostCSS provides a complete set of features to do so, I prioritize *designs that don't hinder ergonomics*.

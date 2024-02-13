@@ -9,36 +9,32 @@
     };
   };
 
-  outputs = inputs: with inputs;
-  flake-utils.lib.eachDefaultSystem (system:
-    with import nixpkgs { inherit system; };
-    let
-      nodejs-package = pkgs.nodejs_21;
-    in
-    rec {
-      workspaceShell = pkgs.mkShell {
-        # nativeBuildInputs is usually what you want -- tools you need to run
-        nativeBuildInputs = with pkgs; [
-          nodejs-package
-          node2nix
-          gnumake
-          nodePackages.typescript-language-server
-        ];
-      };
+  outputs = inputs:
+    with inputs;
+      flake-utils.lib.eachDefaultSystem (
+        system:
+          with import nixpkgs {inherit system;}; let
+            nodejs-package = pkgs.nodejs_21;
+          in rec {
+            workspaceShell = pkgs.mkShell {
+              # nativeBuildInputs is usually what you want -- tools you need to run
+              nativeBuildInputs = with pkgs; [
+                nodejs-package
+                node2nix
+                gnumake
+                nodePackages_latest.typescript-language-server
+              ];
+            };
 
-      devShells = {
-        # nix develop
-        "${system}".default = workspaceShell;
-        default = workspaceShell;
-      };
-      packages = {
-        default = (import ./nix {
-          inherit pkgs system;
-          nodejs = nodejs-package;
-        }).package;
-        shell = devShells.default;
-      };
-    }
-  );
+            devShells = {
+              # nix develop
+              "${system}".default = workspaceShell;
+              default = workspaceShell;
+            };
+            packages = {
+              default = pkgs.callPackage ./nix {};
+              shell = devShells.default;
+            };
+          }
+      );
 }
-

@@ -1,31 +1,23 @@
-<script setup lang="ts">
-import HelloWorld from "@/components/HelloWorld.vue";
-</script>
-
 <template>
-  <div class="flex space-x-4 justify-center items-center">
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="@/assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="flex flex-col h-screen w-screen -z-10">
+    <NavBar
+      :items="state.items"
+      :socials="state.socials"
+    />
+    <Landing id="#top"></Landing>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <div class="w-full space-y-48 py-24 z-10 bg-slate-100">
+    <animate-entry>
+      <about-me id="about-me"></about-me>
+    </animate-entry>
+    <animate-entry>
+      <portfolio id="portfolio"></portfolio>
+    </animate-entry>
+    <animate-entry>
+      <experiences id="timeline"></experiences>
+    </animate-entry>
+  </div>
+  <footer-vue></footer-vue>
+  <back-to-top></back-to-top>
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
-
+<script lang="ts" src="./Home.ts"></script>

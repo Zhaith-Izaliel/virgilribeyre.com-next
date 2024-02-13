@@ -1,0 +1,222 @@
+.animated-button {
+  &.block-effect {
+    @apply cursor-pointer relative flex justify-center items-center z-20 transition-all ease-in-out duration-500;
+
+    &.default {
+      .before {
+        @apply border-y-background;
+      }
+
+      .after {
+        @apply bg-background;
+      }
+    }
+
+    &.primary {
+      .before {
+        @apply border-y-primary;
+      }
+
+      .after {
+        @apply bg-primary;
+      }
+    }
+
+    &.success {
+      .before {
+        @apply border-y-success;
+      }
+
+      .after {
+        @apply bg-success;
+      }
+    }
+
+    &.info {
+      .before {
+        @apply border-y-info;
+      }
+
+      .after {
+        @apply bg-info;
+      }
+    }
+
+    &.warning {
+      .before {
+        @apply border-y-warning;
+      }
+
+      .after {
+        @apply bg-warning;
+      }
+    }
+
+    &.danger {
+      .before {
+        @apply border-y-danger;
+      }
+
+      .after {
+        @apply bg-danger;
+      }
+    }
+
+    &:hover {
+      @apply text-default;
+
+      .before,
+      .after {
+        @apply opacity-100;
+        transform: scaleY(1);
+      }
+    }
+
+    .before,
+    .after {
+      @apply absolute left-0 w-full h-full transition-all duration-300 ease-in-out opacity-0 -z-10;
+    }
+
+    .before {
+      @apply top-0 border-y-2;
+      transform: scaleY(2);
+    }
+
+    .after {
+      top: 0.1rem;
+      transform: scale(0);
+    }
+  }
+
+  &.cta-effect {
+    @apply relative h-auto transition-all ease-in-out duration-500 cursor-pointer font-semibold;
+    width: 12em;
+
+    .circle {
+      @apply m-0 w-full relative block rounded-full transition-all duration-500 ease-in-out;
+      height: 3em;
+
+      @screen md {
+        width: 3em;
+      }
+
+      .icon {
+        @apply m-auto absolute bg-default top-0 bottom-0 transition-all duration-500 ease-in-out;
+        left: 0.625em;
+        width: 1.125em;
+        height: 0.125em;
+        transform: translate(1em, 0);
+
+        @screen md {
+          @apply bg-transparent transform-none;
+        }
+
+        &::before {
+          @apply absolute;
+          content: '';
+          top: -0.25em;
+          right: 0.0625em;
+          width: 0.625em;
+          height: 0.625em;
+          border-top-width: 0.115em;
+          border-right-width: 0.115em;
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    .main {
+      @apply text-default absolute top-1/4 bottom-0 left-0 right-0 transition-all duration-500 ease-in-out;
+      margin: 0 0 0 1.85em;
+    }
+
+    @screen md {
+      &:hover {
+        .circle {
+          @apply w-full;
+
+          .icon {
+            @apply bg-default;
+            transform: translate(1em, 0);
+          }
+        }
+
+        .main {
+          @apply text-default !important;
+        }
+      }
+    }
+
+    &.default {
+      .circle {
+        @apply bg-background;
+      }
+
+      .main {
+        @screen md {
+          @apply text-background;
+        }
+      }
+    }
+
+    &.info {
+      .circle {
+        @apply bg-info;
+      }
+
+      .main {
+        @screen md {
+          @apply text-info;
+        }
+      }
+    }
+
+    &.primary {
+      .circle {
+        @apply bg-primary;
+      }
+
+      .main {
+        @screen md {
+          @apply text-primary;
+        }
+      }
+    }
+
+    &.success {
+      .circle {
+        @apply bg-success;
+      }
+
+      .main {
+        @screen md {
+          @apply text-success;
+        }
+      }
+    }
+
+    &.warning {
+      .circle {
+        @apply bg-warning;
+      }
+
+      .main {
+        @screen md {
+          @apply text-warning;
+        }
+      }
+    }
+
+    &.danger {
+      .circle {
+        @apply bg-danger;
+      }
+
+      .main {
+        @screen md {
+          @apply text-danger;
+        }
+      }
+    }
+  }
+}

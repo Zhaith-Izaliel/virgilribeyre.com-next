@@ -1,0 +1,56 @@
+.nav-wrapper {
+  @apply fixed flex z-40 top-0 w-screen;
+
+  .nav-container {
+    @apply flex text-xl justify-between w-full py-2 items-center space-x-2 px-4;
+
+    .nav-logo {
+      @apply hidden cursor-pointer;
+
+      @screen md {
+        @apply block;
+      }
+    }
+
+    .nav-menu-btn {
+      @apply block transition-all duration-500 ease-in-out text-default;
+
+      &:hover {
+        @apply cursor-pointer;
+      }
+
+      @screen md {
+        @apply hidden;
+      }
+    }
+
+    .nav-items-container {
+      @apply hidden justify-center;
+
+      @screen md {
+        @apply flex;
+      }
+    }
+  }
+}
+
+.mobile-nav-menu {
+  @apply fixed z-50 bg-background/85 backdrop-blur-2xl text-default p-4 w-screen h-screen;
+  @apply text-3xl;
+
+  .mobile-nav-container {
+    @apply flex flex-col justify-evenly min-h-full items-center;
+
+    .mobile-nav-menu-close {
+      @apply absolute top-0 left-0 m-6;
+    }
+
+    .mobile-nav-items-container {
+      @apply flex flex-col justify-center h-full items-center space-y-12 w-2/3;
+    }
+
+    .nav-socials {
+      @apply pt-4 m-4 border-solid border-t-2 border-default;
+    }
+  }
+}
