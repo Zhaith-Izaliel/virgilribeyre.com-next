@@ -1,5 +1,5 @@
 <template>
-  <section class="w-2/3 flex flex-col items-center space-y-4">
+  <section class="w-2/3 flex flex-col items-center space-y-12">
     <TimelineCard
       v-for="event in sortedEvents"
       :key="event.name"

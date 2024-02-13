@@ -12,7 +12,7 @@ export default defineComponent({
         }
       },
       {
-        threshold: 0.5,
+        threshold: 0.3,
       }
     );
 

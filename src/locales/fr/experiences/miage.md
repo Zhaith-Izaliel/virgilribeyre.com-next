@@ -1,0 +1,1 @@
+Institute under the University de Lorraine in which I learned and mastered **the basics of theoretical computer sciences**, **propositional and predicate logic** as well as **testing** philosophies. This training also gave me strong knowledge in **mathematics** applied to **development** as well as transverse skills such as **marketing** or **accounting**.

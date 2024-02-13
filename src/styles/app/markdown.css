@@ -1,10 +1,10 @@
 .markdown-render {
   h1 {
-    @apply font-bold tracking-tight mb-5 mx-auto w-1/2 flex items-center justify-center text-5xl md:text-6xl;
+    @apply font-bold tracking-tight mb-5 mx-auto w-1/2 flex items-center justify-center text-center text-5xl md:text-6xl;
   }
 
   h2 {
-    @apply mb-5 flex items-center justify-center text-3xl sm:text-4xl lg:text-5xl;
+    @apply mb-5 flex items-center justify-center text-center text-3xl sm:text-4xl lg:text-5xl;
   }
 
   p {

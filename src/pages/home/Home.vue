@@ -6,7 +6,7 @@
     />
     <Landing id="#top"></Landing>
   </div>
-  <div class="w-full space-y-48 pt-24 z-10 bg-slate-100">
+  <div class="w-full space-y-48 py-24 z-10 bg-slate-100">
     <animate-entry>
       <about-me id="about-me"></about-me>
     </animate-entry>

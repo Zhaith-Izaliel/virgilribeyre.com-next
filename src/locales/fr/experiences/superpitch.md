@@ -1,0 +1,1 @@
+Internship followed by a **full-stack** development fixed-term contract in a creative agency that works with about fifty clients (start-ups, SMEs, but also larger companies). As part of my work, I **designed** and implemented the company's **testing** strategy for its **internal frameworks** and enhanced their functionality.

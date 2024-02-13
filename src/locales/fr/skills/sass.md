@@ -1,0 +1,1 @@
+Similarly to CSS, Sass is a language I know extremely well. I am even able to **create complex animations and layouts using Sass only** as well as automate style creation using its advanced functional features. However, as much as Sass provides a complete set of features to do so, I prioritize *designs that don't hinder ergonomics* and ease code to further increase scalability.

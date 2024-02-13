@@ -1,0 +1,1 @@
+I master HTML and can build static websites with it, as well as **Progressive Web Apps** and even advanced interfaces. I practice **semantics HTML** and use, when necessary, tags other than `<div>` everywhere, to **ease readability** of existing interfaces when updating and scaling them.

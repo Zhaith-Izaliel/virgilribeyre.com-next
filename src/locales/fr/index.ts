@@ -1,9 +1,17 @@
 import sr from './sr';
 import locale from './locale';
+import markdown from './markdown';
+import skills from './skills';
+import projects from './projects';
+import experiences from './experiences';
 
 export default {
   sr,
   locale,
+  markdown,
+  skills,
+  projects,
+  experiences,
   l_language: 'Langue',
   l_virgil_ribeyre: 'Virgil Ribeyre',
   l_software_developer: 'Developper Logiciel',
@@ -17,18 +25,20 @@ export default {
   l_about_me: 'À propos',
   l_portfolio: 'Portfolio',
   l_timeline: 'Expériences',
-  l_search_placeholder: 'Search',
-  l_search_skills_placeholder: 'Search skills',
-  l_icons8_credit: 'Colored icons provided by',
+  l_skills: 'Compétences',
+  l_search_placeholder: 'Rechercher',
+  l_search_skills_placeholder: 'Rechercher des compétences',
+  l_icons8_credit: 'Icônes fournies par',
   l_icons8: 'Icons8',
-  l_ziglogo_credit: 'Zig logo provided by',
+  l_ziglogo_credit: 'Logo Zig fourni par',
   l_ziglang: 'The Official Zig Project',
-  l_work_with_me: "Let's work together!",
-  l_show_more: 'Show more',
-  l_show_less: 'Show less',
-  l_projects: 'Projects',
-  l_learn_more: 'Learn more',
-  l_want_more: 'More on Gitlab',
-  l_now: 'Today',
-  l_copyright: '© {currentYear} Virgil Ribeyre. All rights reserved.',
+  l_work_with_me: 'Travaillons ensemble !',
+  l_show_more: 'Voir plus',
+  l_show_less: 'Voir moins',
+  l_projects: 'Projets',
+  l_learn_more: 'En savoir plus',
+  l_want_more: 'Plus sur Gitlab',
+  l_now: "Aujourd'hui",
+  l_copyright: '© {currentYear} Virgil Ribeyre. Tous droits réservés.',
+  l_license: 'Ce site web est sous licence',
 };

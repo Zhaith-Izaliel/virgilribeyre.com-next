@@ -1,0 +1,1 @@
+**Applying** and **following** the DevOps processes is part of my daily work. Most of my past and present contracts revolved around these methods. As such, I am able to get into DevOps workflow **fairly easily**.

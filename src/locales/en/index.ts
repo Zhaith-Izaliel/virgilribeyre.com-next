@@ -6,9 +6,9 @@ import projects from './projects';
 import experiences from './experiences';
 
 export default {
-  markdown,
   sr,
   locale,
+  markdown,
   skills,
   projects,
   experiences,
@@ -41,4 +41,5 @@ export default {
   l_want_more: 'More on Gitlab',
   l_now: 'Today',
   l_copyright: '© {currentYear} Virgil Ribeyre. All rights reserved.',
+  l_license: 'This work is licensed under',
 };

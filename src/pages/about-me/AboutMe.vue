@@ -5,10 +5,12 @@
         class="m-4 markdown-render"
         :source="t('markdown.l_about_me')"
       />
-      <div class="w-full flex items-center lg:justify-end text-lg">
+      <div
+        class="w-full flex items-center justify-center lg:justify-end text-lg"
+      >
         <a
           :href="state.mail.url"
-          class="xl:min-w-[25%] lg:min-w-[33%] min-w-[66%]"
+          class="xl:min-w-[25%] lg:min-w-[44%] min-w-[66%]"
         >
           <AnimatedButton
             type="cta-effect"

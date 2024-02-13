@@ -257,6 +257,20 @@ export const projects: Project[] = [
     url: new URL('https://gitlab.com/Zhaith-Izaliel/testability-linter'),
     img: new URL('/src/assets/projects/default.png', import.meta.url),
   },
+  {
+    name: 'filevirtuelle',
+    label: 'projects.l_icypeas',
+    description: 'projects.l_icypeas_description',
+    url: new URL('https://www.icypeas.com/'),
+    img: new URL('/src/assets/projects/icypeas.png', import.meta.url),
+  },
+  {
+    name: 'filevirtuelle',
+    label: 'projects.l_filevirtuelle',
+    description: 'projects.l_filevirtuelle_description',
+    url: new URL('https://www.filevirtuelle.com/'),
+    img: new URL('/src/assets/projects/filevirtuelle.png', import.meta.url),
+  },
 ];
 
 export const terminalTexts: TerminalText[] = [

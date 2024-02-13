@@ -31,7 +31,7 @@
         <a
           :href="state.malt.url"
           target="_blank"
-          class="w-11/12 md:w-3/5 lg:w-2/5 xl:w-7/12"
+          class="w-11/12 md:w-3/5 lg:w-1/2 xl:w-7/12"
         >
           <AnimatedButton
             type="cta-effect"
