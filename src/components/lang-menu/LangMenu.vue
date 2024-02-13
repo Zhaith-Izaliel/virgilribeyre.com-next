@@ -43,9 +43,7 @@
           >
             <div class="w-full flex space-x-4">
               <img
-                :src="`@/../node_modules/svg-country-flags/svg/${
-                  locale === 'en' ? 'us' : locale
-                }.svg`"
+                :src="getFlag(locale === 'en' ? 'us' : locale)"
                 :alt="`${locale}-lang`"
                 width="30rem"
               />
