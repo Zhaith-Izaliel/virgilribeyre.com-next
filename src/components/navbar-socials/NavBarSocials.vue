@@ -6,7 +6,7 @@
     <a
       v-for="(social, i) in socials"
       :key="i"
-      :href="social.url"
+      :href="social.url.toString()"
       :class="{
         'hidden md:inline': isBar,
       }"

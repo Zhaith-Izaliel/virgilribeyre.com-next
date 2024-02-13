@@ -1,7 +1,7 @@
 <template>
   <div class="project-card">
     <img
-      :src="project.img"
+      :src="project.img.toString()"
       :alt="project.name"
       class="w-full h-full rounded-xl"
     />
@@ -15,7 +15,8 @@
         class="learn-more-container"
       >
         <a
-          :href="project.url"
+          v-show="project.url"
+          :href="project.url ? project.url.toString() : ''"
           target="_blank"
           class="learn-more"
         >

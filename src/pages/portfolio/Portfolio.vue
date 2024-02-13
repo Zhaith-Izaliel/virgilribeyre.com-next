@@ -11,7 +11,7 @@
       class="w-full lg:w-2/3 xl:w-1/2 flex items-center justify-center lg:justify-end text-lg"
     >
       <a
-        :href="state.gitlab.url"
+        :href="state.gitlab.url.toString()"
         target="_blank"
         class="xl:min-w-[25%] lg:min-w-[33%] min-w-[66%]"
       >

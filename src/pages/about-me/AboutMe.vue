@@ -9,7 +9,7 @@
         class="w-full flex items-center justify-center lg:justify-end text-lg"
       >
         <a
-          :href="state.mail.url"
+          :href="state.mail.url.toString()"
           class="xl:min-w-[25%] lg:min-w-[44%] min-w-[66%]"
         >
           <AnimatedButton

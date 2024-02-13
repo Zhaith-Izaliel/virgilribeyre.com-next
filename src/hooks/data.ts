@@ -1,5 +1,5 @@
 import type { Skill, Social, SocialName, TimelineEvent } from '@/types';
-import _ from 'lodash';
+import { find } from 'lodash';
 import { socials } from '@/data';
 
 /**
@@ -8,7 +8,7 @@ import { socials } from '@/data';
  * @returns the first social found going by the provided name, otherwise the first social in the list
  */
 export function getSocialByName(name: SocialName): Social {
-  const social = _.find(socials, (item: Social) => item.name === name);
+  const social = find(socials, (item: Social) => item.name === name);
   return !social ? socials[0] : social;
 }
 

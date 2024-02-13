@@ -14,7 +14,7 @@ export default defineComponent({
     const { t } = useI18n();
 
     const getSkillImg = (name: string) =>
-      new URL(`/src/assets/skills/${name}.svg`, import.meta.url);
+      new URL(`/src/assets/skills/${name}.svg`, import.meta.url).toString();
 
     const emptySkillCells = (level: number) => 6 - level;
 
