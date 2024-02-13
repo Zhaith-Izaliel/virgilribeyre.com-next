@@ -24,9 +24,7 @@
     "lint": "npm run lint:app && npm run lint:css",
     "lint:app": "npx eslint --fix '{src/**/*.ts,src/**/*/tsx,src/**/*.vue,tests/**/*.ts,tests/**/*.vue}'",
     "lint:css": "npx stylelint --fix src/**/*.css tests/**/*.css",
-    "docs": "npx typedoc --out docs --theme minimal src",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "docs": "npx typedoc --out docs --theme minimal src"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.17",
@@ -45,13 +43,6 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.6.9",
-    "@storybook/addon-interactions": "^7.6.9",
-    "@storybook/addon-links": "^7.6.9",
-    "@storybook/blocks": "^7.6.9",
-    "@storybook/test": "^7.6.9",
-    "@storybook/vue3": "^7.6.9",
-    "@storybook/vue3-vite": "^7.6.9",
     "@stylistic/eslint-plugin-js": "^1.5.4",
     "@types/chai": "^4.3.11",
     "@types/jest": "^29.5.11",
@@ -79,7 +70,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sinon": "^17.0.1",
-    "storybook": "^7.6.9",
     "stylelint": "^16.2.0",
     "stylelint-config-standard": "^36.0.0",
     "stylelint-config-tailwindcss": "^0.0.7",

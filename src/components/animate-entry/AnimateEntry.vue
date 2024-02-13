@@ -1,10 +1,16 @@
 <template>
-  <div ref="target">
+  <div
+    ref="target"
+    class="w-full"
+  >
     <div
-      :class="{
-        'animate__animated animate__fadeIn animate__fast': animate,
-        invisible: !animate,
-      }"
+      :class="[
+        'w-full',
+        {
+          'animate__animated animate__fadeIn animate__fast': animate,
+          invisible: !animate,
+        },
+      ]"
     >
       <slot></slot>
     </div>

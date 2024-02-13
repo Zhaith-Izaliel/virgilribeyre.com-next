@@ -1,1 +1,3 @@
-Haskell is a language I know **fairly well** and was my introduction to **functional programming**. I can work on **fairly advanced** software with it.
+
+
+Haskell est un langage que je connais **assez bien** et qui a été mon introduction à la **programmation fonctionnelle**. Je peux travailler sur des logiciels **assez avancés** avec lui.

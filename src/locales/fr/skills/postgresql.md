@@ -1,1 +1,3 @@
-I have **fairly advanced knowledge** in PostgreSQL and can manage **complex databases** with it. However, I still lack a broad understanding of PostgreSQL when distributed on multiple clusters.
+
+
+J'ai des **connaissances assez avancées** en PostgreSQL et je peux gérer des **bases de données complexes** avec. Cependant, je n'ai pas encore une bonne compréhension de PostgreSQL lorsqu'il est distribué sur plusieurs clusters.

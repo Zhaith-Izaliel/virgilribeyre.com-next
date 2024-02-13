@@ -1,1 +1,3 @@
-I understand **intermediate features** of the React.js framework, as well as **advanced features** for component **optimizations**.
+
+
+Je comprends les **fonctionnalités intermédiaires** du framework React.js, ainsi que les **fonctionnalités avancées** pour l'**optimisation des composants**.

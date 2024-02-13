@@ -1,1 +1,3 @@
-C# is a language I know well thanks to my hobby work in Unity. Applying **design patterns** and **clean code standards** in this language are the key points of processes when working with it.
+
+
+C# est un langage que je connais bien grâce à mon travail d'amateur dans Unity. L'application de **design patterns** et des **standards du clean code** dans ce langage sont les points clés des processus lorsque je travaille avec lui.

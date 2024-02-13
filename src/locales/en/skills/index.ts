@@ -94,7 +94,7 @@ export default {
   l_rust_description: Rust,
   l_sass: 'Sass',
   l_sass_description: Sass,
-  l_tailwindcss: 'tailwindcss',
+  l_tailwindcss: 'TailwindCSS',
   l_tailwindcss_description: TailwindCSS,
   l_typescript: 'Typescript',
   l_typescript_description: TypescriptMD,

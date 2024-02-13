@@ -1,2 +1,4 @@
-Internship done at the LIG as a **researcher**, working on **testability**, how to measure it and how to enforce practices and coding patterns that enhance **testability** while avoiding patterns hindering it.
-This Internship led to the development of an **open-source prototype Testability Linter**, similar to ESLint, available [here](https://gitlab.com/Zhaith-Izaliel/testability-linter).
+
+
+Stage effectué au LIG en tant qu'**interne de sous-spécialité chercheur**, travaillant sur la **testabilité**, comment la mesurer et comment appliquer des pratiques et des modèles de codage qui améliorent la **testabilité** tout en évitant les modèles qui l'entravent.
+Ce stage a conduit au développement d'un prototype **open-source Testability Linter**, similaire à ESLint, disponible \[ici\] (https://gitlab.com/Zhaith-Izaliel/testability-linter).

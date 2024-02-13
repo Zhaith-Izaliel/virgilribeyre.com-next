@@ -1,1 +1,3 @@
-Similarly to CSS, Sass is a language I know extremely well. I am even able to **create complex animations and layouts using Sass only** as well as automate style creation using its advanced functional features. However, as much as Sass provides a complete set of features to do so, I prioritize *designs that don't hinder ergonomics* and ease code to further increase scalability.
+
+
+Tout comme CSS, Sass est un langage que je connais très bien. Je suis même capable de **créer des animations et des mises en page complexes en utilisant uniquement Sass** ainsi que d'automatiser la création de styles en utilisant ses fonctionnalités avancées. Cependant, même si Sass fournit un ensemble complet de fonctionnalités pour ce faire, je donne la priorité aux *conceptions qui n'entravent pas l'ergonomie* et à la facilité du code pour augmenter encore l'évolutivité.

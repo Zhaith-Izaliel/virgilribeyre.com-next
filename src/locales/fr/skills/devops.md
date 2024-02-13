@@ -1,1 +1,3 @@
-**Applying** and **following** the DevOps processes is part of my daily work. Most of my past and present contracts revolved around these methods. As such, I am able to get into DevOps workflow **fairly easily**.
+
+
+**Appliquer** et **suivre** les processus de DevOps fait partie de mon travail quotidien. La plupart de mes contrats passés et présents tournent autour de ces méthodes. En tant que tel, je suis capable d'entrer dans des workflows DevOps **assez facilement**.

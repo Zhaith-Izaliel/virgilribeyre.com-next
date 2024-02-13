@@ -1,1 +1,3 @@
-I have **fairly advanced knowledge** in MySQL and can manage **complex databases** with it. However, I still lack a broad understanding of MySQL when distributed on multiple clusters.
+
+
+J'ai des **connaissances assez avancées** en MySQL et je peux gérer des **bases de données complexes** avec. Cependant, je n'ai pas encore une bonne compréhension de MySQL lorsqu'il est distribué sur plusieurs clusters.

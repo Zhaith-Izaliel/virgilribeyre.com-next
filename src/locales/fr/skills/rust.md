@@ -1,1 +1,3 @@
-Rust is language I know most of the **intermediate features** on a **single-threaded application**. I'm still **learning** it to reach full proficiency in this language.
+
+
+Rust est un langage dont je connais la plupart des **fonctionnalités intermédiaires** sur une **application mono-thread**. Je suis encore en train de **l'apprendre** pour atteindre la pleine maîtrise de ce langage.

@@ -1,6 +1,8 @@
-Software development centered around missions proposed by various customers (start-ups, SMEs, but also larger companies). The missions vary in terms of time (1 to 2 days to 6 months or more) and methods/languages (Frontend, Backend, DevOps, System, SaaS, ...). **Flexibility** is important to be able to quickly **adapt** to different development processes, strict or not, as well as ensuring consistency in your code deliveries.
 
-## Customers
+
+Développement de logiciels centré sur des missions proposées par divers clients (start-ups, PME, mais aussi de plus grandes entreprises). Les missions varient en termes de temps (1 à 2 jours à 6 mois ou plus) et de méthodes/langages (Frontend, Backend, DevOps, Système, SaaS, etc). La **flexibilité** est importante pour pouvoir s'**adapter** rapidement à différents processus de développement, stricts ou non, ainsi que pour assurer la cohérence de vos livraisons de code.
+
+## Clients
 
 - Superpitch
 - Icypeas
@@ -9,4 +11,4 @@ Software development centered around missions proposed by various customers (sta
 - My Science Work
 - Fondation Jérôme Lejeune
 
-*Please note this is a non-exhaustive list as some of my current and past missions can be under NDA.*
+*Veuillez noter qu'il s'agit d'une liste non exhaustive, car certaines de mes missions actuelles et passées peuvent être soumises à l'accord de confidentialité.*

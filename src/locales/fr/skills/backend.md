@@ -1,1 +1,3 @@
-I know the ins and outs of Backend development for **REST APIs** and **HTTP servers** as well as *common cybersecurity concerns*. I, however, lack knowledge on hardening Backends to day-one attacks.
+
+
+Je connais les tenants et les aboutissants du développement de Backend pour des **API REST** et des **serveurs HTTP** ainsi que *les préoccupations courantes en matière de cybersécurité*. Cependant, je manque de connaissances sur le renforcement des back-ends contre les attaques day-one.

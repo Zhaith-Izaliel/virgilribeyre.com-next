@@ -1,1 +1,3 @@
-As of now, I'm **learning** Elixir, but I understand its **basic concepts**.
+
+
+Pour l'instant, j'**apprends** Elixir, mais je comprends ses **concepts de base**.

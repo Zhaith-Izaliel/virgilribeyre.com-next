@@ -1,1 +1,3 @@
-I master HTML and can build static websites with it, as well as **Progressive Web Apps** and even advanced interfaces. I practice **semantics HTML** and use, when necessary, tags other than `<div>` everywhere, to **ease readability** of existing interfaces when updating and scaling them.
+
+
+Je maîtrise le HTML et je peux créer des sites web statiques, ainsi que des **applications web progressives** et même des interfaces avancées. Je pratique le HTML **sémantique** et utilise, quand c'est nécessaire, des balises autres que des `<div>` partout, pour **faciliter la lisibilité** des interfaces existantes lors de leur mise à jour et de leur mise à l'échelle.

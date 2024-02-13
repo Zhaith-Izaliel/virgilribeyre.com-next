@@ -1,1 +1,3 @@
-I can manage ElasticSearch databases, **distributed or not**. I can also work with its **API**, in the context of a **Backend**, as well as create fairly **advanced** databases with it.
+
+
+Je sais gérer des bases de données ElasticSearch, **distribuées ou non**. Je peux également travailler avec son **API**, dans le contexte d'un **Backend**, ainsi que créer des bases de données assez **avancées** avec elle.

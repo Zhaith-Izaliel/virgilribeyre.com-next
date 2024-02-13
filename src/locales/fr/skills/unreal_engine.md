@@ -1,1 +1,3 @@
-As of now, I'm **learning** Unreal Engine, but I understand its **basic concepts**.
+
+
+Pour l'instant, j'**apprends** Unreal Engine, mais je comprends ses **concepts de base**.

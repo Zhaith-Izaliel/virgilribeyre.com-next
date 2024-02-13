@@ -36,7 +36,7 @@ import ViteJs from './vitejs.md';
 import Linux from './linux.md';
 
 export default {
-  l_backend: 'Backend Development',
+  l_backend: 'Développement Back-End',
   l_backend_description: Backend,
   l_bash: 'Bash',
   l_bash_description: Bash,
@@ -56,7 +56,7 @@ export default {
   l_elasticsearch_description: ElasticSearch,
   l_elixir: 'Elixir',
   l_elixir_description: Elixir,
-  l_frontend: 'Frontend Development',
+  l_frontend: 'Développement Front-End',
   l_frontend_description: Frontend,
   l_git: 'Git',
   l_git_description: Git,
@@ -94,7 +94,7 @@ export default {
   l_rust_description: Rust,
   l_sass: 'Sass',
   l_sass_description: Sass,
-  l_tailwindcss: 'tailwindcss',
+  l_tailwindcss: 'TailwindCSS',
   l_tailwindcss_description: TailwindCSS,
   l_typescript: 'Typescript',
   l_typescript_description: TypescriptMD,

@@ -1,1 +1,3 @@
-I understand the basics concepts of Docker, and I'm able to create **simple containers** and keep them **up and running** for as long as necessary.
+
+
+Je comprends les concepts de base de Docker, et je suis capable de créer des **conteneurs simples** et de les maintenir **en fonctionnement** aussi longtemps que nécessaire.

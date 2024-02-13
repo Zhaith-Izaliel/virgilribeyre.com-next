@@ -1,1 +1,3 @@
-As of now, I'm **learning** GraphQL, but I understand its **basic concepts**.
+
+
+Pour l'instant, j'**apprends** GraphQL, mais je comprends ses **concepts de base**.

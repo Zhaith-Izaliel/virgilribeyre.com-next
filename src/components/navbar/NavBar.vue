@@ -10,6 +10,7 @@
   >
     <nav class="nav-container">
       <section class="nav-menu-btn">
+        <span class="sr-only">{{ t(`sr.l_open_navigation_menu`) }}</span>
         <IconoirProvider>
           <Menu @click="toggleMenu" />
         </IconoirProvider>
@@ -75,6 +76,7 @@
           :key="i"
           :to="item.route"
           class="nav-item"
+          @click="toggleMenu"
         >
           {{ t(item.label) }}
         </router-link>

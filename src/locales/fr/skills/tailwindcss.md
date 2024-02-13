@@ -1,1 +1,3 @@
-I know **advanced features** of TailwindCSS, and I'm able to write, not only **clean responsive websites** with it, but also leverage its **theming capabilities** to the fullest. This website is **made** with TailwindCSS!
+
+
+Je connais les **fonctionnalités avancées** de TailwindCSS, et je suis capable d'écrire, non seulement des **sites web réactifs propres** avec lui, mais aussi d'exploiter au maximum ses **capacités de création de thèmes**. Ce site est **fait** avec TailwindCSS !

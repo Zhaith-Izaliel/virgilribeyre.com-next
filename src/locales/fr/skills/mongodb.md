@@ -1,1 +1,3 @@
-I have a **some advanced knowledge of MongoDB** due to my experiences with ElasticSearch and MongoDB. However, my knowledge is limited to **undistributed databases** with it.
+
+
+J'ai une **connaissance avancée de MongoDB** grâce à mes expériences avec ElasticSearch et MongoDB. Cependant, mes connaissances se limitent aux **bases de données non distribuées**.

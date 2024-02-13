@@ -1,1 +1,3 @@
-Vite.js is a frontend tooling I **understand well**, especially for **bootstrapping Vue.js applications**. This website is powered by Vite.js!
+
+
+Vite.js est un outil frontend que je **comprends bien**, en particulier pour **bootstrapper des applications Vue.js**. Ce site web est propulsé par Vite.js !

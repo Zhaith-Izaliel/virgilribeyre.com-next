@@ -1,1 +1,3 @@
-Internship followed by a **full-stack** development fixed-term contract in a creative agency that works with about fifty clients (start-ups, SMEs, but also larger companies). As part of my work, I **designed** and implemented the company's **testing** strategy for its **internal frameworks** and enhanced their functionality.
+
+
+Stage suivi d'un CDD de développement **full-stack** dans une agence créative qui travaille avec une cinquantaine de clients (start-ups, PME, mais aussi entreprises plus importantes). Dans le cadre de mon travail, j'ai **conçu** et mis en place la **stratégie de test** de l'entreprise pour ses **frameworks internes** et améliorées leurs fonctionnalités.

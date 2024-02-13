@@ -1,1 +1,3 @@
-CSS is a language I know extremely well. I am even able to **create complex animations and layouts using CSS only**. However, as much as CSS provides a complete set of features to do so, I prioritize *designs that don't hinder ergonomics*.
+
+
+Le CSS est un langage que je connais très bien. Je suis même capable de **créer des animations et des mises en page complexes en utilisant uniquement CSS**. Cependant, même si CSS fournit un ensemble complet de fonctionnalités, je donne la priorité aux *conceptions qui n'entravent pas l'ergonomie*.

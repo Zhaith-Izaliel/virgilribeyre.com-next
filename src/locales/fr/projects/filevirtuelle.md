@@ -1,1 +1,3 @@
-A 100% responsive digitalized waiting queue solution, fast and effective. As part of a contract, I worked as a **full-stack developer** and **technical support** agent on this project.
+
+
+Une solution de file d'attente digitalisée 100% responsive, rapide et efficace. Dans le cadre d'un contrat, j'ai travaillé en tant que **développeur full-stack** et **agent de support technique** sur ce projet.

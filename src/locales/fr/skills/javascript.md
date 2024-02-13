@@ -1,1 +1,3 @@
-Mastery in JavaScript on multiple **frameworks** (Vue.js, React, Koa.js, Express, JQuery). I practice strict code practices that I enforce using **ESLint** and **Prettier**, even to the point of pushing documentations first. I'm also working on a custom ESLint rules-set to further increase my **code quality** when working in JavaScript.
+
+
+Maîtrise du JavaScript sur plusieurs **frameworks** (Vue.js, React, Koa.js, Express, JQuery). J'applique des pratiques de code strictes que je fais respecter en utilisant **ESLint** et **Prettier**, jusqu'à pousser les documentations en premier. Je travaille également sur un ensemble de règles ESLint personnalisées afin d'améliorer encore la **qualité du code** lorsque je travaille en JavaScript.

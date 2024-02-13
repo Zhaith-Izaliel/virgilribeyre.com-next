@@ -1,1 +1,3 @@
-Similarly to CSS, PostCSS is a language I know extremely well. I am even able to **create complex animations and layouts using PostCSS only**. However, as much as PostCSS provides a complete set of features to do so, I prioritize *designs that don't hinder ergonomics*.
+
+
+Tout comme CSS, PostCSS est un langage que je connais très bien. Je suis même capable de **créer des animations et des mises en page complexes en utilisant uniquement PostCSS**. Cependant, même si PostCSS fournit un ensemble complet de fonctionnalités pour ce faire, je donne la priorité aux *conceptions qui n'entravent pas l'ergonomie*.
