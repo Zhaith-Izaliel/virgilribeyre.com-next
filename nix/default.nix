@@ -5,7 +5,7 @@ buildNpmPackage {
 
   src = ../.;
 
-  npmDepsHash = "sha256-QuInZh2EX0DJNv/yxRl14w4KW+bZBQwQItTEcRUADbY=";
+  npmDepsHash = "sha256-tD/NT+ShUFxnFRxB2EgMwfFaO4wMp2okmWAQMrGs59Q=";
 
   installPhase = ''
     cp -r dist $out
