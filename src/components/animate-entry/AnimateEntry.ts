@@ -1,20 +1,15 @@
-import { ref, onMounted, PropType, defineComponent } from 'vue';
-import { AnimationType } from '@/types';
+import { onMounted, ref, defineComponent } from 'vue';
 
 export default defineComponent({
-  props: {
-    animationType: {
-      type: String as PropType<AnimationType>,
-      default: () => 'fadeIn',
-    },
-  },
   setup() {
     const target = ref();
     const animate = ref(false);
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        animate.value = entry.isIntersecting;
+        if (entry.isIntersecting) {
+          animate.value = true;
+        }
       },
       {
         threshold: 0.5,

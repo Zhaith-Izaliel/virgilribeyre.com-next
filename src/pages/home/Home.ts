@@ -6,6 +6,7 @@ import Portfolio from '@/pages/portfolio/Portfolio.vue';
 import Experiences from '@/pages/experiences/Experiences.vue';
 import FooterVue from '@/pages/footer/Footer.vue';
 import BackToTop from '@/components/back-to-top/BackToTop.vue';
+import AnimateEntry from '@/components/animate-entry/AnimateEntry.vue';
 import { socials } from '@/data';
 
 export default defineComponent({
@@ -17,6 +18,7 @@ export default defineComponent({
     Experiences,
     FooterVue,
     BackToTop,
+    AnimateEntry,
   },
   data() {
     return {

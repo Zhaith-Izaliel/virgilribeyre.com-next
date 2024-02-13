@@ -6,12 +6,18 @@
     />
     <Landing id="#top"></Landing>
   </div>
-  <div class="w-full pt-6 z-10 bg-slate-100">
-    <AboutMe id="about-me"></AboutMe>
-    <Portfolio id="portfolio"></Portfolio>
-    <Experiences id="timeline"></Experiences>
+  <div class="w-full space-y-48 pt-24 z-10 bg-slate-100">
+    <animate-entry>
+      <about-me id="about-me"></about-me>
+    </animate-entry>
+    <animate-entry>
+      <portfolio id="portfolio"></portfolio>
+    </animate-entry>
+    <animate-entry>
+      <experiences id="timeline"></experiences>
+    </animate-entry>
   </div>
-  <FooterVue></FooterVue>
-  <BackToTop></BackToTop>
+  <footer-vue></footer-vue>
+  <back-to-top></back-to-top>
 </template>
 <script lang="ts" src="./Home.ts"></script>

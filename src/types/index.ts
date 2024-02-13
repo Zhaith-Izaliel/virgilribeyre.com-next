@@ -40,4 +40,4 @@ export type BackgroundStar = {
   number: number;
 };
 
-export type AnimationType = 'fadeIn' | 'expand' | 'retract';
+export type AnimationType = 'fadeIn';

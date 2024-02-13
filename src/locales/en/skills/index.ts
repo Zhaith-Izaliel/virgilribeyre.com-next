@@ -7,6 +7,7 @@ import CSharp from './csharp.md';
 import Css from './css.md';
 import DevOps from './devops.md';
 import Docker from './docker.md';
+import Elixir from './elixir.md';
 import ElasticSearch from './elasticsearch.md';
 import Frontend from './frontend.md';
 import Git from './git.md';
@@ -25,6 +26,14 @@ import PostgreSQL from './postgresql.md';
 import Python from './python.md';
 import TypescriptMD from './typescript.md';
 import Sass from './sass.md';
+import Unity from './unity.md';
+import UnrealEngine from './unreal_engine.md';
+import Rust from './rust.md';
+import ReactMD from './react.md';
+import TailwindCSS from './tailwindcss.md';
+import Zig from './zig.md';
+import ViteJs from './vitejs.md';
+import Linux from './linux.md';
 
 export default {
   l_backend: 'Backend Development',
@@ -45,6 +54,8 @@ export default {
   l_docker_description: Docker,
   l_elasticsearch: 'ElasticSearch',
   l_elasticsearch_description: ElasticSearch,
+  l_elixir: 'Elixir',
+  l_elixir_description: Elixir,
   l_frontend: 'Frontend Development',
   l_frontend_description: Frontend,
   l_git: 'Git',
@@ -61,6 +72,8 @@ export default {
   l_javascript_description: Javascript,
   l_kubernetes: 'Kubernetes',
   l_kubernetes_description: Kubernetes,
+  l_linux: 'Linux',
+  l_linux_description: Linux,
   l_mongodb: 'MongoDB',
   l_mongodb_description: MongoDB,
   l_mysql: 'MySQL',
@@ -76,19 +89,23 @@ export default {
   l_python: 'Python',
   l_python_description: Python,
   l_react: 'React.js',
-  // l_react_description: ReactMD,
+  l_react_description: ReactMD,
   l_rust: 'Rust',
-  // l_rust_description: Rust,
+  l_rust_description: Rust,
   l_sass: 'Sass',
   l_sass_description: Sass,
+  l_tailwindcss: 'tailwindcss',
+  l_tailwindcss_description: TailwindCSS,
   l_typescript: 'Typescript',
   l_typescript_description: TypescriptMD,
   l_unity: 'Unity',
-  // l_unity_description: Unity,
+  l_unity_description: Unity,
   l_unreal_engine: 'Unreal Engine',
-  // l_unreal_engine_description: Unreal,
+  l_unreal_engine_description: UnrealEngine,
   l_vitejs: 'Vite.js',
-  // l_vitejs_description: ViteJS,
+  l_vitejs_description: ViteJs,
   l_vuejs: 'Vue.js',
   l_vuejs_description: VueJs,
+  l_zig: 'Zig',
+  l_zig_description: Zig,
 };

@@ -9,7 +9,7 @@
       </h2>
       <vue-markdown
         :source="t(event.description)"
-        class="markdown-render"
+        class="markdown-experiences-render"
       ></vue-markdown>
     </div>
   </section>

@@ -16,12 +16,42 @@
   p {
     @apply text-base;
   }
+
+  code {
+    @apply bg-slate-200 px-2 py-1 rounded-lg font-mono;
+  }
+}
+
+.markdown-experiences-render {
+  h2 {
+    @apply mt-5 mb-2 text-3xl text-primary;
+  }
+
+  p {
+    @apply text-lg;
+  }
+
+  ul li {
+    @apply ml-6 text-lg;
+
+    list-style-type: disc;
+  }
+
+  ul {
+    @apply mb-4;
+  }
 }
 
 .markdown-render,
+.markdown-experiences-render,
 .markdown-skill-render {
-  a {
-    @apply text-purple-500 underline cursor-pointer hover:divide-purple-400;
+  a,
+  a:visited {
+    @apply text-indigo-700 underline cursor-pointer transition-all duration-300 ease-in-out;
+
+    &:hover {
+      @apply text-indigo-500;
+    }
   }
 
   strong {

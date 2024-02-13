@@ -3,6 +3,7 @@ import locale from './locale';
 import markdown from './markdown';
 import skills from './skills';
 import projects from './projects';
+import experiences from './experiences';
 
 export default {
   markdown,
@@ -10,6 +11,7 @@ export default {
   locale,
   skills,
   projects,
+  experiences,
   l_language: 'Language',
   l_virgil_ribeyre: 'Virgil Ribeyre',
   l_software_developer: 'Software Developer',
@@ -27,8 +29,10 @@ export default {
   l_skills: 'Skills',
   l_search_placeholder: 'Search',
   l_search_skills_placeholder: 'Search skills',
-  l_icons8_credit: 'Colored icons provided by',
+  l_icons8_credit: 'Icons provided by',
   l_icons8: 'Icons8',
+  l_ziglogo_credit: 'Zig logo provided by',
+  l_ziglang: 'The Official Zig Project',
   l_work_with_me: "Let's work together!",
   l_show_more: 'Show more',
   l_show_less: 'Show less',

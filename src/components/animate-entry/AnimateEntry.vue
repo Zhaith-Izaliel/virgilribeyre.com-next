@@ -1,16 +1,13 @@
 <template>
   <div ref="target">
-    <transition :name="animationType">
-      <div
-        v-if="animate"
-        class="animated-component"
-      >
-        <slot></slot>
-      </div>
-    </transition>
+    <div
+      :class="{
+        'animate__animated animate__fadeIn animate__fast': animate,
+        invisible: !animate,
+      }"
+    >
+      <slot></slot>
+    </div>
   </div>
 </template>
 <script lang="ts" src="./AnimateEntry.ts"></script>
-<style scoped>
-@import url('./AnimateEntry.css');
-</style>
