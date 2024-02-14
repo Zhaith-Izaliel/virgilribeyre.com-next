@@ -249,7 +249,7 @@ export const projects: Project[] = [
     label: 'projects.l_testability_linter',
     description: 'projects.l_testability_linter_description',
     url: new URL('https://gitlab.com/Zhaith-Izaliel/testability-linter'),
-    img: new URL('/src/assets/projects/default.png', import.meta.url),
+    img: new URL('/src/assets/projects/default.jpg', import.meta.url),
   },
   {
     name: 'filevirtuelle',

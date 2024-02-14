@@ -2,7 +2,6 @@ import { defineComponent, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { getSocialByName } from '@/hooks/data';
 import AnimatedButton from '@/components/animated-button/AnimatedButton.vue';
-import AnimatedBackground from '@/components/animated-background/AnimatedBackground.vue';
 import { SendSolidSolid, SendDiagonalSolidSolid } from '@iconoir/vue';
 import { DateTime } from 'luxon';
 
@@ -11,7 +10,6 @@ export default defineComponent({
     AnimatedButton,
     SendDiagonalSolidSolid,
     SendSolidSolid,
-    AnimatedBackground,
   },
   setup() {
     const { t } = useI18n();
