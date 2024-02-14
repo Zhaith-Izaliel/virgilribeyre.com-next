@@ -2,7 +2,6 @@ import { defineComponent, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { getSocialByName } from '@/hooks/data';
 import AnimatedButton from '@/components/animated-button/AnimatedButton.vue';
-import AnimatedBackground from '@/components/animated-background/AnimatedBackground.vue';
 import { SendSolidSolid, SendDiagonalSolidSolid } from '@iconoir/vue';
 import { DateTime } from 'luxon';
 
@@ -11,7 +10,6 @@ export default defineComponent({
     AnimatedButton,
     SendDiagonalSolidSolid,
     SendSolidSolid,
-    AnimatedBackground,
   },
   setup() {
     const { t } = useI18n();
@@ -32,23 +30,6 @@ export default defineComponent({
     return {
       state: {
         malt: getSocialByName('malt'),
-        stars: [
-          {
-            size: '1px',
-            time: 50,
-            number: 700,
-          },
-          {
-            size: '2px',
-            time: 75,
-            number: 500,
-          },
-          {
-            size: '3px',
-            time: 80,
-            number: 300,
-          },
-        ],
       },
     };
   },
