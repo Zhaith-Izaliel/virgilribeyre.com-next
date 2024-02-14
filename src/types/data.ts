@@ -21,26 +21,6 @@ export type Social = {
 };
 
 /**
- * Defines a Terminal Text used for the TeminalText component
- */
-export type TerminalText = {
-  /**
-   * The label of the text
-   */
-  label: string;
-
-  /**
-   * The class applied to the text
-   */
-  class: string;
-
-  /**
-   * The time in ms to write a letter of the text defined in `label`
-   */
-  time: number;
-};
-
-/**
  * Defines a skill, usually a programming language
  */
 export type Skill = {
