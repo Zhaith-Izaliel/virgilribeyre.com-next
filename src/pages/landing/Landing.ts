@@ -30,23 +30,6 @@ export default defineComponent({
     return {
       state: {
         malt: getSocialByName('malt'),
-        stars: [
-          {
-            size: '1px',
-            time: 50,
-            number: 700,
-          },
-          {
-            size: '2px',
-            time: 75,
-            number: 500,
-          },
-          {
-            size: '3px',
-            time: 80,
-            number: 300,
-          },
-        ],
       },
     };
   },
