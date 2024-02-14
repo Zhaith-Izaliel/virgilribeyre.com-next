@@ -18,13 +18,14 @@
         <h1 class="text-4xl sm:text-5xl md:text-8xl">
           {{ t('l_virgil_ribeyre') }}
         </h1>
-        <TerminalEffect
-          :is-col="true"
-          :pause-time="1000"
-          :texts="state.terminalTexts"
-          class="text-3xl sm:text-4xl lg:text-5xl"
-        >
-        </TerminalEffect>
+        <p class="text-3xl sm:text-4xl lg:text-5xl">
+          <span class="text-indigo-500">
+            {{ t('l_software_developer') }}
+          </span>
+          <span class="animate__animated animate__flash animate__infinite">
+            <slot name="cursor">_</slot>
+          </span>
+        </p>
         <h2 class="text-xl sm:text-2xl md:text-3xl text-slate-400">
           {{ t('l_years_old', { age }) }}
         </h2>

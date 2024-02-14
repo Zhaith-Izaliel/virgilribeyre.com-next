@@ -1,7 +1,0 @@
-.terminal-box {
-  @apply flex justify-start items-center;
-
-  .terminal-text {
-    @apply flex justify-center items-center;
-  }
-}
