@@ -21,6 +21,13 @@
   .stars {
     @apply absolute bg-transparent bottom-full -z-40 shadow-default;
     filter: blur(1px);
-    animation: animStar linear infinite;
+
+    @screen lg {
+      animation: animStar linear infinite;
+
+      @media print, (prefers-reduced-motion: reduce) {
+        animation: none;
+      }
+    }
   }
 }
