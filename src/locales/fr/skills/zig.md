@@ -1,1 +1,1 @@
-As of now, I'm **learning** Zig, but I understand its **basic concepts**.
+Pour l'instant, j'**apprends** Zig, mais je comprends ses **concepts de base**.
