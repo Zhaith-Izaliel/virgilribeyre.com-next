@@ -1,10 +1,4 @@
-import type {
-  Social,
-  TerminalText,
-  Skill,
-  Project,
-  TimelineEvent,
-} from '@/types';
+import type { Social, Skill, Project, TimelineEvent } from '@/types';
 import { DateTime } from 'luxon';
 
 export const socials: Social[] = [
@@ -270,34 +264,6 @@ export const projects: Project[] = [
     description: 'projects.l_filevirtuelle_description',
     url: new URL('https://www.filevirtuelle.com/'),
     img: new URL('/src/assets/projects/filevirtuelle.png', import.meta.url),
-  },
-];
-
-export const terminalTexts: TerminalText[] = [
-  {
-    label: 'l_fullstack',
-    class: 'text-indigo-500',
-    time: 2,
-  },
-  {
-    label: 'l_system',
-    class: 'text-indigo-500',
-    time: 2,
-  },
-  {
-    label: 'l_devops',
-    class: 'text-indigo-500',
-    time: 2,
-  },
-  {
-    label: 'l_video_games',
-    class: 'text-indigo-500',
-    time: 2,
-  },
-  {
-    label: 'l_software_developer',
-    class: 'text-indigo-500',
-    time: 2,
   },
 ];
 
