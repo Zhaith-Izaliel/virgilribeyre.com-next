@@ -32,7 +32,7 @@ export default defineComponent({
       if (state.search.value === '') {
         return sortedSkills;
       }
-      const re = new RegExp(escapeStringRegexp(state.search.value));
+      const re = new RegExp(escapeStringRegexp(state.search.value), 'i');
       return sortedSkills.filter(
         (skill) =>
           skill.name.match(re) ||
