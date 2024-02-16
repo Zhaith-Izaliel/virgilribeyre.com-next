@@ -32,9 +32,7 @@
   }
 
   ul li {
-    @apply ml-6 text-lg;
-
-    list-style-type: disc;
+    @apply text-lg;
   }
 
   ul {
@@ -56,5 +54,15 @@
 
   strong {
     @apply text-primary font-semibold;
+  }
+
+  ul li {
+    @apply ml-6;
+
+    list-style-type: disc;
+  }
+
+  em {
+    @apply italic text-indigo-700;
   }
 }
