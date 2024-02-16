@@ -1,11 +1,11 @@
 .project-card {
-  @apply relative w-full min-h-48 rounded-xl text-default shadow-xl shadow-indigo-200;
+  @apply w-full min-h-48 rounded-xl text-default shadow-xl shadow-indigo-200 bg-cover bg-no-repeat bg-center;
 
   .project-info-container {
-    @apply flex flex-col space-y-2 rounded-xl p-4 justify-end w-full h-full absolute top-0 bg-gradient-to-b from-background/20 to-background backdrop-blur-sm;
+    @apply flex flex-col space-y-2 rounded-xl p-4 pt-8 justify-between w-full h-full top-0 bg-gradient-to-b from-indigo-950/30 to-background backdrop-blur;
 
     .project-title {
-      @apply text-xl tracking-tight font-semibold border-b pb-2 border-default;
+      @apply text-2xl tracking-tight font-semibold border-b pb-2 border-default;
     }
 
     .learn-more-container {

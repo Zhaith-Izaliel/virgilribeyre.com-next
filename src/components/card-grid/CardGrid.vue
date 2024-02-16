@@ -32,10 +32,7 @@
         </slot>
       </template>
     </button>
-    <div class="background-container">
-      <div class="right"></div>
-      <div class="left"></div>
-    </div>
+    <div class="background-container"></div>
   </section>
 </template>
 <script lang="ts" src="./CardGrid.ts"></script>

@@ -1,10 +1,8 @@
 <template>
-  <div class="project-card">
-    <img
-      :src="project.img.toString()"
-      :alt="project.name"
-      class="w-full h-full rounded-xl"
-    />
+  <div
+    class="project-card"
+    :style="`background-image: url('${project.img.toString()}')`"
+  >
     <div class="project-info-container">
       <h1 class="project-title">
         {{ t(project.label) }}
