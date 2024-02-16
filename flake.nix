@@ -18,11 +18,8 @@
           in rec {
             workspaceShell = pkgs.mkShell {
               # nativeBuildInputs is usually what you want -- tools you need to run
-              nativeBuildInputs = with pkgs; [
+              nativeBuildInputs = [
                 nodejs-package
-                node2nix
-                gnumake
-                nodePackages_latest.typescript-language-server
               ];
             };
 
