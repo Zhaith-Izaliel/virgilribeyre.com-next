@@ -2,7 +2,7 @@
   @apply w-full min-h-48 rounded-xl text-default shadow-xl shadow-indigo-200 bg-cover bg-no-repeat bg-center;
 
   .project-info-container {
-    @apply flex flex-col space-y-2 rounded-xl p-4 pt-8 justify-between w-full h-full top-0 bg-gradient-to-b from-indigo-950/30 to-background backdrop-blur;
+    @apply flex flex-col space-y-2 rounded-xl p-4 pt-8 justify-between w-full h-full top-0 bg-gradient-to-b from-indigo-950/30 to-background;
 
     .project-title {
       @apply text-2xl tracking-tight font-semibold border-b pb-2 border-default;

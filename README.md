@@ -31,16 +31,13 @@
 
 <br />
 <div align="center">
-<h1 align="center">🚀Vue + Typescript Bootstraper</h1>
+<h1 align="center">🚀virgilribeyre.com</h1>
 
 <p align="center">
-    An opinionated bootstraper to create a Vue.js application, with first class
-    Typescript support, powered by Vite.js
-    <br />
-    <a href="https://gitlab.com/bootstrapers/vue-typescript-bootstraper"><strong>Explore the docs »</strong></a>
+    The sources of virgilribeyre.com, my professional website.
     <br />
     <br />
-    <a href="https://gitlab.com/bootstrapers/vue-typescript-bootstraper">View Demo</a>
+    <a href="https://virgilribeyre.com">Visit the Website</a>
     ·
     <a href="https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/issues">Report Bug</a>
     ·
@@ -75,16 +72,8 @@
 
 ## About The Project
 
-[![Vue Ts Bootstrapper Screenshot][product-screenshot]](https://gitlab.com/bootstrapers/vue-typescript-bootstraper)
-This project is used as a base for other project to start on. It provides a
-complete package to work with Vue.js 3, with Typescript, on Vite. It is also
-loaded with support for routing using Vue Router, internationalization using
-VueI18n and TailwindCSS support out of the box.
-
-It contains opinionated defaults, with ESLint as the primary linter, following
-_mostly_ the AirBnB Javascript and Typescript styleguides. Jest for easy testing
-purposes (WIP) all bundled up in a Nix flake to ease deployment and deployment
-cycles on Nix powered configurations.
+[![virgilribeyre.com Screenshot][product-screenshot]](https://gitlab.com/bootstrapers/vue-typescript-bootstraper)
+This is the source of my website, virgilribeyre.com. From there you can build it for yourself and check how I made it! It is built for modularity first, as such, it uses Markdown to render most of the content and data array easily fillable to add or modify content in a breeze.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +91,7 @@ cycles on Nix powered configurations.
 
 ## Getting Started
 
-Working with this bootstraper is as simple as cloning the repository and
+Working on this project is as simple as cloning the repository and
 building on top of it. And if you are using Nix + Direnv as your daily driver,
 you don't even need to think about the dependencies to install, as the flake
 will spawn a convenient development shell for you.
@@ -118,64 +107,25 @@ If you intend to work with Nix:
 
 ### Installation
 
-1. Clone the repository in your desired project directory:
+1. Clone the repository:
 
 ```bash
-git clone https://gitlab.com/bootstrapers/vue-typescript-bootstraper.git path/to/your/project
+git clone https://gitlab.com/Zhaith-Izaliel/virgilribeyre.com-next.git
 ```
 
-2. Navigate to the project directory you just use and remove `.git`:
-
-```bash
-cd path/to/your/project
-rm -rf .git
-```
-
-3. (Optional) Allow direnv to gain access to the dependencies using Nix:
+2. (Optional) Allow direnv to gain access to the dependencies using Nix:
 
 ```bash
 direnv allow
 ```
 
-4. Install the NPM dependencies:
+3. Install the NPM dependencies:
 
 ```bash
 npm install
 ```
 
-5. Change the information to your project's in the `package.json` and (optional) flake:
-
-`package.json`
-
-```json
-{
-  "name": "vue-typescript-bootstraper",
-  "author": "Virgil Ribeyre",
-  "license": "MIT",
-  "description": "An opinionated bootstraper to create a Vue.js application, with first class Typescript support, powered by Vite.js",
-  "keywords": [
-    "bootstraper",
-    "template",
-    "typescript",
-    "eslint",
-    "vuejs",
-    "tailwindcss",
-    "vite"
-  ],
-  "version": "1.0.0",
-...
-```
-
-`flake.nix`
-
-```nix
-{
-  description = "An opinionated bootstraper to create a Vue.js application, with first class Typescript support, powered by Vite.js";
-# --Snip --
-}
-```
-
-6. Start-up Vite and you're good to go!
+4. Start-up Vite and you're good to go!
 
 ```bash
 npm run dev
@@ -204,75 +154,17 @@ npm run build
 - Lint the entire code base
 
 ```bash
-npm run lint && npm run lint:markup
+npm run lint
 ```
 
 There are 2 different commands, as Vue files needs to be linted with `vue-tsc`
 directly, and not with ESLint.
 
-- Generate Nix derivation:
-
-```
-make
-```
-
 - Build project with Nix:
 
 ```
-make build
+nix build
 ```
-
-### Directory Structure
-
-<!-- LTeX: enabled=false -->
-
-```
-.
-├── nix/
-│   └── Contains the files you need for building with Nix.
-├── src/
-│   ├── main.ts | Your app TS entry point
-│   ├── App.vue | Your app entry point
-│   ├── router.ts | Generates the router instance
-│   ├── assets/
-│   │   ├── styles/
-│   │   │   ├── *all.css* | Imports all other styles
-│   │   │   ├── app/
-│   │   │   │   └── YourStyleSheet.css
-│   │   │   ├── globals/
-│   │   │   │   └── Contains all your global CSS variables
-│   │   │   └── vendors/
-│   │   │       └── Contains other vendors CSS
-│   │   └── images/
-│   │       └── Contains the images of your app.
-│   ├── components/
-│   │   └── ComponentName/
-│   │       ├── ComponentName.css
-│   │       ├── ComponentName.ts
-│   │       └── ComponentName.vue
-│   ├── hooks/
-│   │   └── Contains your TS hooks
-│   ├── i18n/
-│   │   ├── index.ts | Generates vueI18n instance
-│   │   └── messages/
-│   │       ├── en
-│   │       ├── fr
-│   │       └── ...
-│   ├── pages/
-│   │   └── PageName/
-│   │       ├── PageName.vue
-│   │       ├── PageName.ts
-│   │       └── PageName.css
-│   ├── routes/
-│   │   └── Contains your routes
-│   └── types/
-│       └── Contains your custom types
-├── test/
-│   └── Contains your test (WIP)
-└── Makefile | Eases Nix derivation generation
-```
-
-<!-- LTeX: enabled=true -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -280,11 +172,10 @@ make build
 
 ## Roadmap
 
-- \[ \] Modify Storybook configuration
-- \[ \] Add storybook documentation
+- \[ \] Fix typos
+- \[ \] Add a dropdown to sort skills by name or level
 - \[ \] Add proper testing support
 - \[ \] Switch to personal ESLint configuration
-- \[ \] Add link to personal styleguide
 
 See the [open issues](https://gitlab.com/bootstrapers/vue-typescript-bootstraper/-/issues) for a full list of proposed features (and known issues).
 
@@ -294,7 +185,7 @@ See the [open issues](https://gitlab.com/bootstrapers/vue-typescript-bootstraper
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. However, keep in mind these contributions **can not** concern the content of the website (ie. which skills or projects to add), as they should reflect what I can professionally do.
 
 **Contributions are only available on GitLab.**
 
@@ -314,7 +205,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="http://virgilribeyre.com">virgilribeyre.com</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://linktr.ee/zhaith_izaliel">Virgil Ribeyre</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="http://virgilribeyre.com">virgilribeyre.com</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://linktr.ee/zhaith_izaliel">Virgil Ribeyre</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0</a></p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

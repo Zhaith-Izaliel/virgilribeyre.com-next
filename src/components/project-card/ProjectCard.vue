@@ -7,7 +7,10 @@
       <h1 class="project-title">
         {{ t(project.label) }}
       </h1>
-      <vue-markdown :source="t(project.description)"></vue-markdown>
+      <vue-markdown
+        class="markdown-project-render"
+        :source="t(project.description)"
+      ></vue-markdown>
       <div
         v-show="project.url"
         class="learn-more-container"

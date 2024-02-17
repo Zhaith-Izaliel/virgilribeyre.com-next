@@ -40,6 +40,27 @@
   }
 }
 
+.markdown-project-render {
+  strong {
+    @apply font-bold;
+  }
+
+  em {
+    @apply italic;
+  }
+}
+
+.markdown-project-render,
+.markdown-render,
+.markdown-experiences-render,
+.markdown-skill-render {
+  ul li {
+    @apply ml-6;
+
+    list-style-type: disc;
+  }
+}
+
 .markdown-render,
 .markdown-experiences-render,
 .markdown-skill-render {
@@ -54,12 +75,6 @@
 
   strong {
     @apply text-primary font-semibold;
-  }
-
-  ul li {
-    @apply ml-6;
-
-    list-style-type: disc;
   }
 
   em {
