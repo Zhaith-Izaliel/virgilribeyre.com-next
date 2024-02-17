@@ -245,6 +245,13 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
   {
+    name: 'virgilribeyre-com',
+    label: 'projects.l_virgilribeyre-com',
+    description: 'projects.l_virgilribeyre-com_description',
+    url: new URL('https://gitlab.com/Zhaith-Izaliel/virgilribeyre.com-next'),
+    img: new URL('/src/assets/projects/virgilribeyre-com.png', import.meta.url),
+  },
+  {
     name: 'testability-linter',
     label: 'projects.l_testability_linter',
     description: 'projects.l_testability_linter_description',
@@ -252,7 +259,7 @@ export const projects: Project[] = [
     img: new URL('/src/assets/projects/default.jpg', import.meta.url),
   },
   {
-    name: 'filevirtuelle',
+    name: 'icypeas',
     label: 'projects.l_icypeas',
     description: 'projects.l_icypeas_description',
     url: new URL('https://www.icypeas.com/'),
