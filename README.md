@@ -154,7 +154,7 @@ npm run build
 - Lint the entire code base
 
 ```bash
-npm run lint && npm run lint:markup
+npm run lint
 ```
 
 There are 2 different commands, as Vue files needs to be linted with `vue-tsc`
