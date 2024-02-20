@@ -39,4 +39,9 @@ export default {
   l_now: "Aujourd'hui",
   l_copyright: '© {currentYear} Virgil Ribeyre. Tous droits réservés.',
   l_license: 'Ce site web est sous licence',
+  l_page_not_found: 'Page introuvable',
+  l_page_not_found_description:
+    "Désolé, nous n'avons pas trouvé la page que vous recherchez.",
+  l_back_home: "Retour à l'accueil",
+  l_contact_me: 'Me contacter',
 };

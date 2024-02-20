@@ -39,4 +39,9 @@ export default {
   l_now: 'Today',
   l_copyright: '© {currentYear} Virgil Ribeyre. All rights reserved.',
   l_license: 'This work is licensed under',
+  l_page_not_found: 'Page not found',
+  l_page_not_found_description:
+    'Sorry, we couldn’t find the page you’re looking for.',
+  l_back_home: 'Go back home',
+  l_contact_me: 'Contact me',
 };
