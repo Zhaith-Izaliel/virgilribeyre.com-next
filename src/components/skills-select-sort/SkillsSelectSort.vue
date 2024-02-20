@@ -32,7 +32,7 @@
             <ListboxOption
               v-for="option in skillsSortOptions"
               v-slot="{ active, selected }"
-              :key="option.name"
+              :key="option.id"
               :value="option"
               as="template"
             >

@@ -1,4 +1,4 @@
-import { PropType, computed, defineComponent, reactive, ref, watch } from 'vue';
+import { PropType, computed, defineComponent, ref, watch } from 'vue';
 import { Skill, SkillsSortOption } from '@/types';
 import { useI18n } from 'vue-i18n';
 import { sortSkills } from '@/hooks/data';

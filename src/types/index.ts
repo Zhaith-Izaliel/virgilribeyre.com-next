@@ -55,7 +55,7 @@ export type SortDirection = 'descending' | 'ascending';
 export type SkillsSortBy = 'level' | 'name';
 
 export type SkillsSortOption = {
-  id: SkillSortBy;
+  id: SkillsSortBy;
 
   direction: SortDirection;
 } & Option;
