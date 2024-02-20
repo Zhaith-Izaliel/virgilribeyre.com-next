@@ -41,3 +41,21 @@ export type BackgroundStar = {
 };
 
 export type AnimationType = 'fadeIn';
+
+export type Option = {
+  id: string;
+
+  label: string;
+
+  disabled: boolean;
+};
+
+export type SortDirection = 'descending' | 'ascending';
+
+export type SkillsSortBy = 'level' | 'name';
+
+export type SkillsSortOption = {
+  id: SkillsSortBy;
+
+  direction: SortDirection;
+} & Option;

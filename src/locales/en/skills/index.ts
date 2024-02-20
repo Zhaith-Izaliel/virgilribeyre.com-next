@@ -11,6 +11,7 @@ import Elixir from './elixir.md';
 import ElasticSearch from './elasticsearch.md';
 import Frontend from './frontend.md';
 import Git from './git.md';
+import Go from './go.md';
 import GraphQL from './graphql.md';
 import Haskell from './haskell.md';
 import Html from './html.md';
@@ -60,6 +61,8 @@ export default {
   l_frontend_description: Frontend,
   l_git: 'Git',
   l_git_description: Git,
+  l_go: 'Go',
+  l_go_description: Go,
   l_graphql: 'GraphQL',
   l_graphql_description: GraphQL,
   l_haskell: 'Haskell',

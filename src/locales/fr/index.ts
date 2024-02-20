@@ -4,6 +4,7 @@ import markdown from './markdown';
 import skills from './skills';
 import projects from './projects';
 import experiences from './experiences';
+import sort from './sort';
 
 export default {
   sr,
@@ -12,6 +13,7 @@ export default {
   skills,
   projects,
   experiences,
+  sort,
   l_language: 'Langue',
   l_virgil_ribeyre: 'Virgil Ribeyre',
   l_software_developer: 'Développeur Logiciel',

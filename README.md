@@ -172,8 +172,8 @@ nix build
 
 ## Roadmap
 
-- \[ \] Fix typos
-- \[ \] Add a dropdown to sort skills by name or level
+- \[x\] Fix typos
+- \[x\] Add a dropdown to sort skills by name or level
 - \[ \] Add proper testing support
 - \[ \] Switch to personal ESLint configuration
 

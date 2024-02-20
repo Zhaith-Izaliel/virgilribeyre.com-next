@@ -3,7 +3,7 @@
     :class="[
       'nav-wrapper',
       {
-        'bg-alt': !scrolled,
+        'bg-alt/25': !scrolled,
         'bg-alt/85 backdrop-blur-xl': scrolled,
       },
     ]"

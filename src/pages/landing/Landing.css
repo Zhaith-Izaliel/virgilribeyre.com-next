@@ -8,19 +8,27 @@
     @apply flex-row;
   }
 
+  .image-container {
+    @apply flex h-full absolute xl:relative justify-center items-center w-full xl:w-1/3 m-0 p-0;
+    background-image: url('@/assets/VR-Large-First.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
   .text-container {
-    @apply w-full h-1/3 flex flex-col py-8 space-y-4 backdrop-blur-3xl justify-center text-2xl items-center rounded-3xl text-default bg-background/75;
+    @apply w-full flex flex-col py-16 space-y-4 backdrop-blur-3xl justify-center text-2xl items-center rounded-3xl text-default bg-background/75;
 
     @screen md {
       @apply text-4xl;
     }
 
     @screen lg {
-      @apply py-72 space-y-6;
+      @apply py-32 space-y-6;
     }
 
     @screen xl {
-      @apply py-80 space-y-8 w-2/5;
+      @apply space-y-8 w-2/5;
     }
   }
 }
