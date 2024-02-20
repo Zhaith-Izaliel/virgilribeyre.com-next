@@ -1,5 +1,26 @@
-import type { Social, Skill, Project, TimelineEvent } from '@/types';
+import type {
+  Social,
+  Skill,
+  Project,
+  TimelineEvent,
+  SkillsSortOption,
+} from '@/types';
 import { DateTime } from 'luxon';
+
+export const skillsSortOptions: SkillsSortOption[] = [
+  {
+    id: 'name',
+    label: 'sort.l_name',
+    disabled: false,
+    direction: 'ascending',
+  },
+  {
+    id: 'level',
+    label: 'sort.l_level',
+    disabled: false,
+    direction: 'descending',
+  },
+];
 
 export const socials: Social[] = [
   {
@@ -96,6 +117,12 @@ export const skills: Skill[] = [
     label: 'skills.l_git',
     level: 5,
     description: 'skills.l_git_description',
+  },
+  {
+    name: 'go',
+    label: 'skills.l_go',
+    level: 1,
+    description: 'skills.l_go_description',
   },
   {
     name: 'graphql',

@@ -1,4 +1,11 @@
-import type { Skill, Social, SocialName, TimelineEvent } from '@/types';
+import type {
+  Skill,
+  SkillsSortBy,
+  Social,
+  SocialName,
+  SortDirection,
+  TimelineEvent,
+} from '@/types';
 import { find } from 'lodash';
 import { socials } from '@/data';
 
@@ -33,16 +40,37 @@ export function sortEvents(events: TimelineEvent[]): TimelineEvent[] {
 /**
  * Sort the provided list of skills and returns the new list sorted alphabetically
  * @param skills - the list of skills to sort
+ * @param sortBy - on which property should the skills be sorted
+ * @param direction - The sort direction to use
  * @returns the sorted skills list
  */
-export function sortSkills(skills: Skill[]): Skill[] {
+export function sortSkills(
+  skills: Skill[],
+  sortBy: SkillsSortBy = 'name',
+  direction: SortDirection = 'ascending'
+): Skill[] {
   return skills.toSorted((a: Skill, b: Skill) => {
-    if (a.name > b.name) {
-      return 1;
+    switch (direction) {
+      case 'descending':
+        if (a[sortBy] < b[sortBy]) {
+          return 1;
+        }
+        if (a[sortBy] > b[sortBy]) {
+          return -1;
+        }
+        break;
+
+      case 'ascending':
+      default:
+        if (a[sortBy] > b[sortBy]) {
+          return 1;
+        }
+        if (a[sortBy] < b[sortBy]) {
+          return -1;
+        }
+        break;
     }
-    if (a.name < b.name) {
-      return -1;
-    }
+
     return 0;
   });
 }

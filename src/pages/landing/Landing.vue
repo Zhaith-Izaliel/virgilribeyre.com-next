@@ -1,15 +1,7 @@
 <template>
   <div class="landing">
     <div class="xl:hidden h-full sm:h-1/3 xl:h-1/12 w-full block"></div>
-    <div
-      class="flex h-full absolute xl:relative justify-center items-center w-full xl:w-1/3 m-0 p-0"
-    >
-      <img
-        alt="Virgil"
-        class="lg:h-11/12 absolute md:bottom-0"
-        src="@/assets/VR-Large-First.png"
-      />
-    </div>
+    <div class="image-container"></div>
     <div class="text-container">
       <h1 class="text-4xl sm:text-5xl md:text-8xl">
         {{ t('l_virgil_ribeyre') }}

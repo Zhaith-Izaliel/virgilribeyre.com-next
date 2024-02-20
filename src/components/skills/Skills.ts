@@ -1,12 +1,14 @@
-import { PropType, computed, defineComponent, ref } from 'vue';
-import { Skill } from '@/types';
+import { PropType, computed, defineComponent, reactive, ref, watch } from 'vue';
+import { Skill, SkillsSortOption } from '@/types';
 import { useI18n } from 'vue-i18n';
+import { sortSkills } from '@/hooks/data';
+import escapeStringRegexp from 'escape-string-regexp';
 import SearchBar from '@/components/search-bar/SearchBar.vue';
 import CardGrid from '@/components/card-grid/CardGrid.vue';
 import SkillCard from '@/components/skill-card/SkillCard.vue';
+import SkillsSelectSort from '@/components/skills-select-sort/SkillsSelectSort.vue';
 import { IconoirProvider, Box3dCenter } from '@iconoir/vue';
-import { sortSkills } from '@/hooks/data';
-import escapeStringRegexp from 'escape-string-regexp';
+import { skillsSortOptions } from '@/data';
 
 export default defineComponent({
   components: {
@@ -15,6 +17,7 @@ export default defineComponent({
     SearchBar,
     SkillCard,
     CardGrid,
+    SkillsSelectSort,
   },
   props: {
     skills: { type: Array as PropType<Skill[]>, required: true },
@@ -22,18 +25,17 @@ export default defineComponent({
   setup(props) {
     const { t } = useI18n();
 
-    const state = {
-      search: ref(''),
-    };
-
-    const sortedSkills = sortSkills(props.skills);
+    const search = ref('');
+    const selectedSortOption = ref(skillsSortOptions[0]);
+    const sortedSkills = ref(sortSkills(props.skills));
 
     const searchResults = computed(() => {
-      if (state.search.value === '') {
-        return sortedSkills;
+      if (search.value === '') {
+        return sortedSkills.value;
       }
-      const re = new RegExp(escapeStringRegexp(state.search.value), 'i');
-      return sortedSkills.filter(
+
+      const re = new RegExp(escapeStringRegexp(search.value), 'i');
+      return sortedSkills.value.filter(
         (skill) =>
           skill.name.match(re) ||
           t(skill.label).match(re) ||
@@ -41,9 +43,19 @@ export default defineComponent({
       );
     });
 
+    watch(selectedSortOption, (newValue: SkillsSortOption) => {
+      sortedSkills.value = sortSkills(
+        props.skills,
+        newValue.id,
+        newValue.direction
+      );
+    });
+
     return {
-      state,
+      search,
+      selectedSortOption,
       searchResults,
+      sortedSkills,
       t,
     };
   },
