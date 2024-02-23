@@ -1,3 +1,1 @@
-
-
-Plusieurs versions de Linux ont été mes systèmes d'exploitation **personnels** et **professionnels** pendant **des années**. Je connais les **fonctionnalités avancées** de l'écosystème. J'ai été capable de **gérer** et **maintenir** plusieurs **serveurs Linux**, que ce soit **en auto-hébergement** ou en **VPS**. De plus, je me suis plongé dans l'ABI\*\* du noyau pour des projets personnels. J'utilise actuellement NixOS comme système d'exploitation Linux.
+Plusieurs versions de Linux ont été mes systèmes d'exploitation **personnels** et **professionnels** pendant **des années**. Je connais les **fonctionnalités avancées** de l'écosystème. J'ai été capable de **gérer** et **maintenir** plusieurs **serveurs Linux**, que ce soit **en auto-hébergement** ou en **VPS**. De plus, je me suis plongé dans l'**ABI** du noyau pour des projets personnels. J'utilise actuellement NixOS comme système d'exploitation Linux.
