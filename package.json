@@ -12,10 +12,10 @@
     "tailwindcss",
     "vite"
   ],
-  "version": "1.6.2",
+  "version": "1.6.3",
   "type": "module",
   "engines": {
-    "node": ">=21"
+    "node": ">=22"
   },
   "scripts": {
     "dev": "vite",
