@@ -1,7 +1,11 @@
-{buildNpmPackage}:
+{
+  buildNpmPackage,
+  version,
+  name,
+}:
 buildNpmPackage {
-  pname = "virgilribeyre.com";
-  version = "1.6.2";
+  inherit version;
+  pname = name;
 
   src = ../.;
 
