@@ -25,7 +25,7 @@ export const skillsSortOptions: SkillsSortOption[] = [
 export const socials: Social[] = [
   {
     name: 'mail',
-    url: new URL('https://aemail.com/82LL'),
+    url: new URL('https://aemail.com/k59x'),
   },
   {
     name: 'malt',
