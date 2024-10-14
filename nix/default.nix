@@ -1,5 +1,6 @@
 {
   buildNpmPackage,
+  importNpmLock,
   version,
   name,
 }:
@@ -9,7 +10,12 @@ buildNpmPackage {
 
   src = ../.;
 
-  npmDepsHash = "sha256-tD/NT+ShUFxnFRxB2EgMwfFaO4wMp2okmWAQMrGs59Q=";
+  # npmDepsHash = "sha256-BkWCjdOErX27VFzkaNPNeLpoE/DC8kG3cx0lrhAmM84=";
+  npmDeps = importNpmLock {
+    npmRoot = ../.;
+  };
+
+  npmConfigHook = importNpmLock.npmConfigHook;
 
   installPhase = ''
     cp -r dist $out
